@@ -2086,8 +2086,17 @@ if ('serviceWorker' in navigator) {
     });
 
     navigator.serviceWorker.register('sw.js').then(function (reg) {
-      // Nudge the browser to check for a new worker each launch.
-      reg.update().catch(function () {});
+      // Check for a new worker on launch, then keep checking while the app
+      // stays open so the update banner appears live — no need to close and
+      // reopen. We poll on a timer and whenever the tab/app regains focus.
+      function checkForUpdate() {
+        reg.update().catch(function () {});
+      }
+      checkForUpdate();
+      setInterval(checkForUpdate, 60 * 1000); // every 60s while open
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'visible') checkForUpdate();
+      });
 
       function promptFor(worker) {
         if (!worker) return;
