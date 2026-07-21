@@ -30,11 +30,23 @@ const PRECACHE = [
 ];
 
 self.addEventListener('install', (event) => {
+  // Precache the shell, but do NOT skipWaiting here: the new worker stays in
+  // the "waiting" state so the page can surface an "Update available" prompt.
+  // The user accepts by triggering SKIP_WAITING (see the message handler below).
+  // On a first-ever install there is no active worker to wait behind, so this
+  // one activates immediately — offline support still works from launch one.
   event.waitUntil(
     caches.open(CACHE_VERSION)
       .then((cache) => cache.addAll(PRECACHE))
-      .then(() => self.skipWaiting())
   );
+});
+
+// The page posts this when the user accepts an update, letting the freshly
+// installed worker take over on the next navigation / reload.
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 self.addEventListener('activate', (event) => {
