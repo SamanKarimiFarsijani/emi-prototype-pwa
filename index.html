@@ -240,7 +240,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ FLIGHT ══ -->
 <sc-if value="{{ isFlight }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Flight" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:baseline;justify-content:space-between;gap:12px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:baseline;justify-content:space-between;gap:12px">
   <div>
     <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:#5A6672">Ops</div>
     <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:3px 0 0;line-height:1.05">Flight</h1>
@@ -286,7 +286,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ PHASES LIST ══ -->
 <sc-if value="{{ isPhases }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Phases" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px">
     <svg onClick="{{ phasesBack }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
     <div>
@@ -323,7 +323,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ MEMORY ITEMS OVERVIEW (independent) ══ -->
 <sc-if value="{{ isMemPhases }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Memory Items Overview" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px">
     <svg onClick="{{ phasesBack }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
     <div>
@@ -355,7 +355,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ CHECKLIST (list mode) ══ -->
 <sc-if value="{{ isChecklist }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Checklist" style="flex:1;display:flex;flex-direction:column;min-height:0;position:relative">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px;min-width:0">
     <svg onClick="{{ backToPhases }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
     <div style="min-width:0">
@@ -431,7 +431,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ LEARN CHECKLIST (list mode, independent of Flight) ══ -->
 <sc-if value="{{ isLearnChecklist }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Learn Checklist" style="flex:1;display:flex;flex-direction:column;min-height:0;position:relative">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px;min-width:0">
     <svg onClick="{{ backToPhases }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
     <div style="min-width:0">
@@ -485,7 +485,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ CHECKLIST (flight mode) ══ -->
 <sc-if value="{{ isFM }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Flight Mode" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 8px;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 8px;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <h1 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ clTitle }}</h1>
   <button onClick="{{ toList }}" style="flex:none;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;padding:8px 14px;border-radius:999px;border:1px solid #DDE2E8;background:#fff;color:#1B242C;cursor:pointer" style-hover="background:#F7F9FB">List mode</button>
 </div>
@@ -542,7 +542,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ LEARN ══ -->
 <sc-if value="{{ isLearn }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Learn" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:baseline;justify-content:space-between;gap:12px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:baseline;justify-content:space-between;gap:12px">
   <div>
     <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:#5A6672">Training</div>
     <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:3px 0 0;line-height:1.05">Learn</h1>
@@ -719,7 +719,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ QUIZ ══ -->
 <sc-if value="{{ isQuiz }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Quick Check" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px">
     <svg onClick="{{ backLearn }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
     <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ qTitle }}</h1>
@@ -794,7 +794,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ LIMITATIONS ══ -->
 <sc-if value="{{ isLims }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Limitations" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px">
     <svg onClick="{{ backLims }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
     <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Limitations</h1>
@@ -824,7 +824,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ LEARN LIMITATIONS (independent of Flight) ══ -->
 <sc-if value="{{ isLearnLims }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Learn Limitations" style="flex:1;display:flex;flex-direction:column;min-height:0;position:relative">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px">
     <svg onClick="{{ backLearn }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
     <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Limitations</h1>
@@ -875,7 +875,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ PROFILE ══ -->
 <sc-if value="{{ isProfile }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Profile" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:12px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:12px">
   <div style="display:flex;align-items:center;gap:10px;min-width:0">
     <svg onClick="{{ closeProfile }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#131A21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none" aria-label="Back"><path d="m15 18-6-6 6-6"></path></svg>
     <div>
@@ -909,7 +909,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ CONFIG SUMMARY (plain view) ══ -->
 <sc-if value="{{ isConfig }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Config Summary" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px;min-width:0">
     <svg onClick="{{ goFlight }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
     <h1 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Config Summary</h1>
@@ -937,7 +937,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ LIMITATIONS (plain view) ══ -->
 <sc-if value="{{ isLimsView }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Limitations View" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px;min-width:0">
     <svg onClick="{{ goFlight }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
     <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Limitations</h1>
@@ -960,7 +960,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ SOPs ══ -->
 <sc-if value="{{ isAnySops }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="SOPs" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px;min-width:0">
     <svg onClick="{{ sopsBack }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
     <div>
@@ -991,7 +991,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ KNOWLEDGE TOPIC ══ -->
 <sc-if value="{{ isTopic }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Topic" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;gap:8px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;gap:8px">
   <svg onClick="{{ backLearn }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
   <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ topicTitle }}</h1>
 </div>
@@ -1022,7 +1022,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ TYPE RATING SELECT ══ -->
 <sc-if value="{{ isTypeRating }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Type Rating" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;gap:8px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;gap:8px">
   <svg onClick="{{ backLearn }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
   <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Type Rating</h1>
 </div>
@@ -1051,7 +1051,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ LEADERBOARD ══ -->
 <sc-if value="{{ isLeaderboard }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Leaderboard" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;gap:8px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;gap:8px">
   <svg onClick="{{ closeLeaderboard }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
   <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Leaderboard</h1>
 </div>
@@ -1090,7 +1090,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ LOGBOOK ══ -->
 <sc-if value="{{ isLogbook }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Logbook" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;gap:8px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;gap:8px">
   <svg onClick="{{ closeLogbook }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
   <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Currency</h1>
 </div>
@@ -1133,7 +1133,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ ORGANISATIONS ══ -->
 <sc-if value="{{ isOrgs }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Organisations" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px">
     <svg onClick="{{ closeOrgs }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
     <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Organisations</h1>
@@ -1172,7 +1172,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ HANGARS ══ -->
 <sc-if value="{{ isHangars }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Hangars" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
   <div style="display:flex;align-items:center;gap:8px">
     <svg onClick="{{ closeHangars }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
     <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Hangars</h1>
@@ -1206,7 +1206,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ STATS / ACHIEVEMENTS ══ -->
 <sc-if value="{{ isStats }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Achievements" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;gap:8px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;gap:8px">
   <svg onClick="{{ closeStats }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
   <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Training Summary</h1>
 </div>
@@ -1256,7 +1256,7 @@ a{color:#1466D6}a:hover{color:#0E4EA8}
 <!-- ══ AIRCRAFT SELECT ══ -->
 <sc-if value="{{ isAircraftSelect }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Aircraft" style="flex:1;display:flex;flex-direction:column;min-height:0">
-<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:8px">
+<div style="padding:calc(env(safe-area-inset-top, 0px) + 22px) 20px 0;display:flex;align-items:center;justify-content:space-between;gap:8px">
   <div style="display:flex;align-items:center;gap:8px">
     <svg onClick="{{ closeAircraft }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
     <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Hangars</h1>
