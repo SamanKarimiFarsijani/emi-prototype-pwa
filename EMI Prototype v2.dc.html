@@ -1,0 +1,2055 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#0E4EA8">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0E4EA8"></rect>
+    <path d="M420 470 L780 350 L640 730 L560 570 L420 490 Z" fill="none" stroke="#ffffff" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"></path>
+    <rect x="470" y="150" width="260" height="70" rx="35" fill="#ffffff" opacity="0.9"></rect>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:radial-gradient(120% 90% at 50% -10%, #E4E9EF 0%, #D6DCE3 55%, #C9D0D8 100%)}
+a{color:#1466D6}a:hover{color:#0E4EA8}
+.emi-scroll{scrollbar-width:none;padding-bottom:104px!important}.emi-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:48px 24px;font-family:'Inter',sans-serif;color:#1B242C">
+<div style="text-align:center">
+  <div style="font-family:'Inter',sans-serif;font-weight:500;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#5A6672">easy memory item — hi-fi prototype</div>
+  <div style="font-size:12px;color:#5A6672;margin-top:3px">Memory items that stick — and make you better.</div>
+</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;display:flex;flex-direction:column;font-family:'Inter',sans-serif;color:#1B242C;background:#EEF1F4;position:relative">
+
+<!-- ══ HOME ══ -->
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<div data-screen-label="Home" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding: 60px 20px 0; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; width: 364px; height: 73px; position: relative">
+  <div>
+    <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:#5A6672">EASY MEMORY ITEM</div>
+    <h1 style="font-family: 'Inter',sans-serif; font-size: 25px; font-weight: 600; letter-spacing: -0.01em; color: #131A21; margin: 3px 0 0; line-height: 1.05; width: 235px; height: 44px">Welcome on Board</h1>
+  </div>
+  <div onClick="{{ openAircraft }}" style="font-family:'Inter',sans-serif;font-size:11px;font-weight:500;color:#5A6672;line-height:1.25;cursor:pointer;display:flex;flex-direction:column;justify-content:center;width:160px;height:52px;box-sizing:border-box;border:1px solid #DDE2E8;background:#fff;border-radius:11px;padding:7px 12px;box-shadow:0 1px 2px rgba(19,26,33,0.03);overflow:hidden" style-hover="background:#F7F9FB">
+    <strong style="color:#1B242C;font-weight:600;font-size:15px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ aircraft }}</strong>
+    <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ acSub }}</span>
+  </div></div><div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:28px">
+
+  <div onClick="{{ flipHome }}" style="perspective:1400px;flex:none;height:200px;cursor:pointer">
+  <div style="position:relative;width:100%;height:100%;transition:transform 0.6s cubic-bezier(0.4,0.2,0.2,1);transform-style:preserve-3d;transform:{{ homeFlipTransform }}">
+  <div style="position:absolute;inset:0;border-radius:20px;overflow:hidden;box-shadow:0 18px 40px -24px rgba(14,78,168,0.7);backface-visibility:hidden;-webkit-backface-visibility:hidden;pointer-events:{{ frontPE }}">
+    <div style="position:absolute;left:0;right:0;top:0;height:60%;background:linear-gradient(180deg,#0E4EA8 0%,#1466D6 62%,#4C93EF 100%)"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:40%;background:linear-gradient(180deg,#232E38 0%,#33414D 100%)"></div>
+    <div style="position:absolute;left:0;right:0;top:60%;height:1.5px;background:rgba(255,255,255,0.92);box-shadow:0 0 8px rgba(255,255,255,0.4)"></div>
+    <div style="position:absolute;left:50%;top:60%;transform:translateX(-50%)">
+      <span style="display:block;width:26px;height:1px;background:rgba(255,255,255,0.55);margin:0 auto 18px"></span>
+      <span style="display:block;width:44px;height:1px;background:rgba(255,255,255,0.55);margin:0 auto 18px"></span>
+      <span style="display:block;width:26px;height:1px;background:rgba(255,255,255,0.35);margin:18px auto 0"></span>
+      <span style="display:block;width:44px;height:1px;background:rgba(255,255,255,0.35);margin:18px auto 0"></span>
+    </div>
+    <div style="position:absolute;top:12px;left:50%;transform:translateX(-50%);display:flex;gap:16px;align-items:flex-start">
+      <span style="width:1px;height:7px;background:rgba(255,255,255,0.55)"></span>
+      <span style="width:1px;height:7px;background:rgba(255,255,255,0.55)"></span>
+      <span style="width:1px;height:10px;background:#fff"></span>
+      <span style="width:1px;height:7px;background:rgba(255,255,255,0.55)"></span>
+      <span style="width:1px;height:7px;background:rgba(255,255,255,0.55)"></span>
+    </div>
+    <span style="position:absolute;top:22px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid #fff"></span>
+    <div style="position:absolute;top:0;right:18px;display:flex;gap:5px;z-index:3">
+      <span style="width:9px;height:34px;background:linear-gradient(180deg,#F7CE5A 0%,#D99B1C 100%);border-radius:0 0 1px 1px;box-shadow:0 1px 3px rgba(6,36,80,0.35)"></span>
+      <span style="width:9px;height:34px;background:linear-gradient(180deg,#F7CE5A 0%,#D99B1C 100%);border-radius:0 0 1px 1px;box-shadow:0 1px 3px rgba(6,36,80,0.35)"></span>
+      <span style="width:9px;height:34px;background:linear-gradient(180deg,#F7CE5A 0%,#D99B1C 100%);border-radius:0 0 1px 1px;box-shadow:0 1px 3px rgba(6,36,80,0.35)"></span>
+      <span style="width:9px;height:34px;background:linear-gradient(180deg,#F7CE5A 0%,#D99B1C 100%);border-radius:0 0 1px 1px;box-shadow:0 1px 3px rgba(6,36,80,0.35)"></span>
+    </div>
+    
+    <div style="position:absolute;top:60%;left:50%;transform:translate(-50%,-50%);display:flex;align-items:center">
+      <span style="width:34px;height:3px;background:#E7A614;border-radius:2px;box-shadow:0 0 0 1px rgba(19,26,33,0.35)"></span>
+      <span style="width:7px;height:7px;background:#E7A614;border-radius:50%;margin:0 6px;box-shadow:0 0 0 1px rgba(19,26,33,0.35)"></span>
+      <span style="width:34px;height:3px;background:#E7A614;border-radius:2px;box-shadow:0 0 0 1px rgba(19,26,33,0.35)"></span>
+    </div>
+    <div style="position:absolute;left:20px;top:18px;right:20px;z-index:3">
+      <div style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.82)">Ready for briefing</div>
+      <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:23px;color:#fff;letter-spacing:-0.01em;margin-top:4px;text-shadow:0 1px 12px rgba(6,36,80,0.5)">All set, {{ userName }}.</div>
+      <div style="font-size:12.5px;color:rgba(255,255,255,0.9);margin-top:4px;max-width:210px;line-height:1.35;text-shadow:0 1px 10px rgba(6,36,80,0.5)">Next check in 96 days</div>
+    </div>
+    <div onClick="{{ openStatsHero }}" style="position:absolute;bottom:14px;left:20px;z-index:4;text-align:left;cursor:pointer">
+      <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:34px;line-height:1;color:{{ fitnessColor }}">{{ fitnessPct }}</div>
+      <div style="font-family:'Inter',sans-serif;font-size:8.5px;letter-spacing:0.13em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-top:2px">COMPETENCY LEVEL</div>
+    </div>
+    <div style="position:absolute;bottom:14px;right:16px;z-index:4;text-align:right">
+      <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:28px;line-height:1;color:#fff">14</div>
+      <div style="font-family:'Inter',sans-serif;font-size:8.5px;letter-spacing:0.13em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-top:1px">week streak</div>
+    </div>
+  </div>
+  <div style="position:absolute;inset:0;border-radius:20px;overflow:hidden;box-shadow:0 18px 40px -24px rgba(14,78,168,0.7);background:#fff;border:1px solid #DDE2E8;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:rotateY(180deg);display:flex;flex-direction:column;pointer-events:{{ backPE }}">
+    <div style="display:flex;align-items:center;gap:14px;padding:16px 18px 14px">
+      <span style="width:50px;height:50px;border-radius:50%;flex:none;background:#EFF3F7;color:#1466D6;display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:600;font-size:20px;border:2px solid #1466D6">{{ userInitial }}</span>
+      <div style="flex:1;min-width:0">
+        <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:17px;line-height:1.1;letter-spacing:-0.01em;color:#131A21">{{ userName }} Decker</div>
+        <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:2px">ATPL · {{ aircraft }} type rating</div>
+      </div>
+    <a href="#" onClick="{{ goProfileStop }}" style="margin-left:auto;font-size:11.5px;text-decoration:none;font-weight:600;color:#1466D6;display:flex;align-items:center;gap:4px">View profile<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></div>
+    <div style="border-top:1px solid #ECEFF3;padding:12px 18px;flex:1;display:flex;flex-direction:column;justify-content:center;gap:11px">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <span style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#5A6672;font-weight:600">Badges</span>
+        
+      </div>
+      <div style="display:flex;align-items:center;gap:9px">
+        <sc-for list="{{ homeBadges }}" as="b" hint-placeholder-count="4">
+          <span title="{{ b.title }}" style="width:38px;height:38px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;background:{{ b.iconBg }};color:{{ b.iconColor }};opacity:{{ b.op }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"></path></svg></span>
+        </sc-for>
+        <a href="#" onClick="{{ openStatsHero }}" style="margin-left:auto;font-size:11.5px;text-decoration:none;font-weight:600;color:#1466D6;display:flex;align-items:center;gap:3px">View all<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin:0 2px 11px">
+      <div style="display:flex;align-items:baseline;gap:9px"><span style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21">Currency</span><span style="font-family:'Inter',sans-serif;font-size:10.5px;color:#5A6672;font-weight:500">last 90 days</span></div>
+      <a href="#" onClick="{{ openLogbook }}" style="font-size:12px;text-decoration:none;font-weight:600;display:flex;align-items:center;gap:3px">View all<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    </div>
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03);padding:14px 15px 12px">
+      <div style="position:relative;height:26px;margin-bottom:2px">
+        <div style="position:absolute;left:72%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center">
+          <span style="font-family:'Inter',sans-serif;font-size:12px;font-weight:600;color:#131A21;line-height:1">14 landings</span>
+          <svg width="12" height="7" viewBox="0 0 12 7" style="margin-top:2px"><path d="M6 7L0 0h12z" fill="#131A21"></path></svg>
+        </div>
+      </div>
+      <div style="display:flex;height:12px;border-radius:6px;overflow:hidden">
+        <div style="width:22%;background:#E4483B"></div>
+        <div style="width:33%;background:#EBB236;border-left:2px solid #fff;border-right:2px solid #fff"></div>
+        <div style="flex:1;background:#37A56A"></div>
+      </div>
+      <div style="position:relative;height:16px;margin-top:5px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;color:#5A6672">
+        <span style="position:absolute;left:22%;transform:translateX(-50%)">3</span>
+        <span style="position:absolute;left:55%;transform:translateX(-50%)">10</span>
+      </div>
+    </div>
+  </div><div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin:0 2px 11px">
+      <div style="display:flex;align-items:baseline;gap:9px"><span style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21">Activity</span></div>
+      <a href="#" onClick="{{ openStats }}" style="font-size:12px;text-decoration:none;font-weight:600;display:flex;align-items:center;gap:3px">View all<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    </div>
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;box-shadow:0 1px 2px rgba(19,26,33,0.03);padding:14px">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:16px">
+        <div style="background:#F2F3F5;border-radius:11px;padding:11px 12px">
+          <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">Current</div>
+          <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:23px;color:#131A21;line-height:1.15;margin-top:1px">12</div>
+          <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">weeks</div>
+        </div>
+        <div style="background:#F2F3F5;border-radius:11px;padding:11px 12px">
+          <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">Best</div>
+          <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:23px;color:#131A21;line-height:1.15;margin-top:1px">18</div>
+          <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">weeks</div>
+        </div>
+        <div style="background:#F2F3F5;border-radius:11px;padding:11px 12px">
+          <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">6 months</div>
+          <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:23px;color:#131A21;line-height:1.15;margin-top:1px">92%</div>
+          <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">consistent</div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-bottom:6px">
+        <span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span>
+      </div>
+      <div style="display:flex;gap:3px">
+        <sc-for list="{{ streakWeeks }}" as="w" hint-placeholder-count="26">
+          <span style="flex:1;aspect-ratio:1;border-radius:4px;background:{{ w.bg }}"></span>
+        </sc-for>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px">
+        <span style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">Past 6 months</span>
+        <span style="font-size:11px;font-weight:600;color:#1466D6;background:#EAF0FA;border-radius:999px;padding:5px 11px;font-family:'Inter',sans-serif">4 weeks to next badge</span>
+      </div>
+    </div>
+  </div><div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin:0 2px 11px">
+      <div style="display:flex;align-items:baseline;gap:9px"><span style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21">Fleet</span><span style="font-family:'Inter',sans-serif;font-size:10.5px;color:#5A6672;font-weight:500">3</span></div>
+      <a href="#" onClick="{{ openHangars }}" style="font-size:12px;text-decoration:none;font-weight:600;display:flex;align-items:center;gap:3px">View all<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    </div>
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <sc-for list="{{ hangar }}" as="h" hint-placeholder-count="3">
+        <div onClick="{{ h.onPick }}" style="display:flex;align-items:center;gap:13px;padding:14px 15px;border-bottom:{{ h.rowBorder }};cursor:pointer" style-hover="background:#F7F9FB">
+          <span style="width:19px;height:19px;flex:none;border-radius:50%;border:1.6px solid {{ h.dotBorder }};background:{{ h.dotBg }};box-shadow:{{ h.dotShadow }}"></span>
+          <div style="flex:1;min-width:0">
+            <div style="font-weight:600;font-size:14.5px;color:#1B242C">{{ h.name }}</div>
+            <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:1px">{{ h.sub }}</div>
+          </div>
+          <span style="font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:0.08em;text-transform:uppercase;color:#17A673;font-weight:600;display:{{ h.tagDisplay }};align-items:center;gap:5px"><span style="width:6px;height:6px;border-radius:50%;background:#17A673;box-shadow:0 0 0 3px rgba(23,166,115,0.14)"></span>Active</span>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  
+
+  
+
+  <div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin:0 2px 11px">
+      <span style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21">Leaderboard</span>
+      <a href="#" onClick="{{ openLeaderboard }}" style="font-size:12px;text-decoration:none;font-weight:600;display:flex;align-items:center;gap:3px">View all<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    </div>
+    <div style="display:flex;gap:6px;margin:0 2px 11px">
+      <sc-for list="{{ leadFilters }}" as="f" hint-placeholder-count="3">
+        <span onClick="{{ f.onPick }}" style="font-size:12px;font-weight:600;padding:7px 14px;border-radius:999px;border:1px solid {{ f.border }};background:{{ f.bg }};color:{{ f.color }};cursor:pointer">{{ f.label }}</span>
+      </sc-for>
+    </div>
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <sc-for list="{{ leadRows }}" as="r" hint-placeholder-count="4">
+        <div style="display:flex;align-items:center;gap:13px;padding:12px 15px;border-bottom:{{ r.rowBorder }};background:{{ r.bg }}">
+          <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;width:38px;flex:none;color:{{ r.rankColor }}">{{ r.rank }}</span>
+          <span style="font-weight:600;font-size:14px;color:{{ r.whoColor }}">{{ r.name }}</span>
+          <span style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-left:auto">{{ r.city }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+
+</div>
+</sc-if>
+
+<!-- ══ FLIGHT ══ -->
+<sc-if value="{{ isFlight }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Flight" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:baseline;justify-content:space-between;gap:12px">
+  <div>
+    <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:#5A6672">Ops</div>
+    <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:3px 0 0;line-height:1.05">Flight</h1>
+  </div>
+  <div onClick="{{ openAircraft }}" style="font-family: 'Inter',sans-serif; font-size: 11px; font-weight: 500; color: #5A6672; line-height: 1.25; cursor: pointer; display: flex; flex-direction: column; justify-content: center; width: 120px; height: 51px; box-sizing: border-box; border: 1px solid #DDE2E8; background: #fff; border-radius: 11px; padding: 7px 12px; box-shadow: 0 1px 2px rgba(19,26,33,0.03); overflow: hidden" style-hover="background:#F7F9FB">
+    <strong style="color:#1B242C;font-weight:600;font-size:15px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ aircraft }}</strong>
+    <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ acSub }}</span>
+  </div>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:20px">
+  
+  
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#5A6672;font-weight:600;margin:2px 2px 0">Checklists</div>
+    <div onClick="{{ openNormals }}" style="box-sizing: border-box; height: 104px; border: 1px solid #9BD9B1; border-radius: 14px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding: 20px 18px; cursor: pointer; box-shadow: 0 1px 2px rgba(19,26,33,0.03); background-color: #C6EBD3" style-hover="background:#B0E3C1">
+      <span style="font-weight: 600; font-size: 20px; color: #12703B">NORMAL</span>
+      <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.06em;color:#2E8C56">11 checklists</span>
+    </div>
+    <div style="display:flex;gap:12px">
+      <div onClick="{{ openAbnormal }}" style="box-sizing:border-box;flex:1;min-width:0;height:104px;background:#FBE59A;border:1px solid #EFD470;border-radius:14px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding:16px;cursor:pointer;box-shadow:0 1px 2px rgba(19,26,33,0.03)" style-hover="background:#F8DC80">
+        <span style="font-weight: 600; font-size: 20px; color: #8A6508">ABNORMAL</span>
+        <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.06em;color:#A57C15;margin-top:4px">3 checklists</span>
+      </div>
+      <div onClick="{{ openEmergency }}" style="box-sizing:border-box;flex:1;min-width:0;height:104px;background:#F8C4BF;border:1px solid #EF9E98;border-radius:14px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding:16px;cursor:pointer;box-shadow:0 1px 2px rgba(19,26,33,0.03)" style-hover="background:#F4AFA9">
+        <span style="font-weight: 600; font-size: 20px; color: #A81F18; text-transform: uppercase">Emergency</span>
+        <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.06em;color:#BE382F;margin-top:4px">4 checklists</span>
+      </div>
+    </div><div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#5A6672;font-weight:600;margin:2px 2px 0">SYSTEM</div><div style="display:flex;gap:12px">
+      <div onClick="{{ openLims }}" style="box-sizing: border-box; flex: 1; min-width: 0; height: 104px; border: 1px solid #B7CEE4; border-radius: 14px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; padding: 16px; cursor: pointer; box-shadow: 0 1px 2px rgba(19,26,33,0.03); background-color: #DCE7F2" style-hover="background:#CEDDEE">
+        <span style="font-weight: 600; font-size: 20px; color: #2C5480">LIMITATIONS</span>
+        <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.06em;color:#5A7BA0;margin-top:4px">739 items</span>
+      </div>
+      <div onClick="{{ openSops }}" style="box-sizing:border-box;flex:1;min-width:0;height:104px;background:#CEDDEE;border:1px solid #AAC6E0;border-radius:14px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding:16px;cursor:pointer;box-shadow:0 1px 2px rgba(19,26,33,0.03)" style-hover="background:#C0D4EA">
+        <span style="font-weight: 600; font-size: 20px; color: #274B74; text-transform: none">SOPs</span>
+        <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.06em;color:#547397;margin-top:4px">24 procedures</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ PHASES LIST ══ -->
+<sc-if value="{{ isPhases }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Phases" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px">
+    <svg onClick="{{ phasesBack }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+    <div>
+      
+      <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:2px 0 0;line-height:1.05">{{ groupTitle }}</h1>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;flex:none">
+    <div onClick="{{ phasesResetAll }}" title="Reset all" style="flex:none;width:34px;height:34px;border-radius:50%;border:1px solid {{ phasesResetBorder }};background:{{ phasesResetBg }};display:flex;align-items:center;justify-content:center;cursor:{{ phasesResetCursor }};pointer-events:{{ phasesResetPE }}" style-hover="background:#F7F9FB">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#D2382B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+    </div>
+    <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:#1B242C">{{ aircraft }}</span>
+  </div>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:12px">
+  <sc-for list="{{ phases }}" as="p" hint-placeholder-count="6">
+    <div onClick="{{ p.onOpen }}" style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;padding:16px 16px 15px;cursor:pointer;box-shadow:0 1px 2px rgba(19,26,33,0.03)" style-hover="background:#F7F9FB">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+        <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:15px;color:#1B242C">{{ p.label }}</span>
+        <span style="display:flex;align-items:center;gap:9px;flex:none">
+          <span style="font-family:'Inter',sans-serif;font-size:12.5px;font-weight:600;color:#5A6672">{{ p.count }}</span>
+          <span style="width:9px;height:9px;border-radius:50%;background:{{ p.progColor }}"></span>
+        </span>
+      </div>
+      <div style="margin-top:11px;height:6px;border-radius:3px;background:#E7EBF0;overflow:hidden">
+        <div style="height:100%;border-radius:3px;background:{{ p.progColor }};width:{{ p.progPct }};transition:width 0.25s ease"></div>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ MEMORY ITEMS OVERVIEW (independent) ══ -->
+<sc-if value="{{ isMemPhases }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Memory Items Overview" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px">
+    <svg onClick="{{ phasesBack }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+    <div>
+      <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:2px 0 0;line-height:1.05">{{ groupTitle }}</h1>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;flex:none">
+    
+    <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:#1B242C">{{ aircraft }}</span>
+  </div>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:12px">
+  <sc-for list="{{ phases }}" as="p" hint-placeholder-count="6">
+    <div onClick="{{ p.onOpen }}" style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;padding:16px 16px 15px;cursor:pointer;box-shadow:0 1px 2px rgba(19,26,33,0.03)" style-hover="background:#F7F9FB">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+        <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:15px;color:#1B242C">{{ p.label }}</span>
+        <span style="display:flex;align-items:center;gap:9px;flex:none">
+          
+          <span style="width:9px;height:9px;border-radius:50%;background:{{ p.progColor }}"></span>
+        </span>
+      </div>
+      
+    </div>
+  </sc-for>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ CHECKLIST (list mode) ══ -->
+<sc-if value="{{ isChecklist }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Checklist" style="flex:1;display:flex;flex-direction:column;min-height:0;position:relative">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px;min-width:0">
+    <svg onClick="{{ backToPhases }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
+    <div style="min-width:0">
+      <h1 style="font-family: 'Inter',sans-serif; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: #131A21; margin: 0; line-height: 1.05; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 234px; height: 27px">{{ clTitle }}</h1>
+      <sc-if value="{{ clHasSub }}" hint-placeholder-val="{{ true }}">
+        
+      </sc-if>
+    </div>
+  </div>
+  <sc-if value="{{ clNoneDone }}" hint-placeholder-val="{{ true }}">
+    <div onClick="{{ clMarkAll }}" title="Mark all done" style="flex:none;width:40px;height:40px;border-radius:50%;border:1px solid #DDE2E8;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer" style-hover="background:#F7F9FB">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#17A673" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 7 17l-5-5"></path><path d="m22 10-7.5 7.5L13 16"></path></svg>
+    </div>
+  </sc-if>
+  <sc-if value="{{ clAnyDone }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ clReset }}" title="Reset checklist" style="flex:none;width:40px;height:40px;border-radius:50%;border:1px solid #DDE2E8;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer" style-hover="background:#F7F9FB">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#D2382B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+    </div>
+  </sc-if>
+</div>
+<div style="display:flex;gap:8px;overflow-x:auto;padding:14px 20px 2px;scrollbar-width:none">
+  <sc-for list="{{ chipPhases }}" as="cp" hint-placeholder-count="5">
+    <span onClick="{{ cp.onOpen }}" style="flex:none;font-family:'Inter',sans-serif;font-size:12px;font-weight:{{ cp.chipWeight }};color:{{ cp.chipColor }};background:{{ cp.chipBg }};border:1px solid {{ cp.chipBorder }};border-radius:999px;padding:7px 13px;cursor:pointer;white-space:nowrap">{{ cp.chipLabel }}</span>
+  </sc-for>
+</div>
+<div style="padding:16px 20px 4px">
+  <div style="height:6px;border-radius:3px;background:#E7EBF0;overflow:hidden">
+    <div style="height:100%;border-radius:3px;background:#1466D6;width:{{ clPct }};transition:width 0.25s ease"></div>
+  </div>
+</div>
+<div class="emi-scroll" id="clList" style="flex:1;overflow:auto;padding:12px 20px 20px;display:flex;flex-direction:column;gap:10px">
+  <sc-for list="{{ clItems }}" as="c" hint-placeholder-count="7">
+    <div onClick="{{ c.onToggle }}" data-cur="{{ c.cur }}" style="display:flex;align-items:center;gap:14px;background:{{ c.cardBg }};border:{{ c.cardBorderCss }};border-radius:14px;padding:14px 16px;cursor:pointer;box-shadow:{{ c.cardShadow }};opacity:{{ c.op }}" style-hover="background:#F7F9FB">
+      <span style="width:26px;height:26px;flex:none;border-radius:10px;border:1.8px solid {{ c.boxBorder }};background:{{ c.boxBg }};display:flex;align-items:center;justify-content:center">
+        <sc-if value="{{ c.checked }}" hint-placeholder-val="{{ false }}">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+        </sc-if>
+        <sc-if value="{{ c.skipped }}" hint-placeholder-val="{{ false }}">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C8892B" stroke-width="2.6" stroke-linecap="round"><path d="M6 12h12"></path></svg>
+        </sc-if>
+      </span>
+      <span style="flex:1;font-family:'Inter',sans-serif;font-weight:600;font-size:15px;color:#1B242C;text-transform:capitalize">{{ c.label }}</span>
+      <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:12.5px;letter-spacing:0.02em;color:{{ c.respColor }};text-align:right;flex:none">{{ c.resp }}</span>
+    </div>
+  </sc-for>
+  <div style="height:150px;flex:none"></div>
+</div>
+<sc-if value="{{ clComplete }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;left:0;right:0;bottom:0;padding:16px 20px 96px;display:flex;flex-direction:column;gap:8px;pointer-events:none;background:linear-gradient(to top, #EEF1F4 72%, rgba(238,241,244,0))">
+  <div style="pointer-events:auto;background:#fff;border:1px solid #DDE2E8;border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px;box-shadow:0 20px 44px -18px rgba(19,26,33,0.5)">
+    <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:#17A673;font-weight:700">Checklist complete</div>
+    <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:20px;color:#131A21;line-height:1.1">{{ clTitle }}</div>
+    <button onClick="{{ clGoNextChk }}" style="margin-top:12px;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;font-family:'Inter',sans-serif;font-size:16px;font-weight:600;color:#fff;background:#17A673;border:none;border-radius:14px;padding:15px 22px;cursor:pointer;box-shadow:0 12px 26px -12px rgba(23,166,115,0.85)" style-hover="background:#128A5F">{{ clNextChkLabel }}<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></button>
+  </div>
+</div>
+</sc-if>
+<sc-if value="{{ clNotComplete }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;gap:44px;padding:10px 20px 108px;background:transparent;pointer-events:none">
+  <button onClick="{{ clSkipCur }}" title="Skip" style="pointer-events:auto;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.6);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);border:1px solid rgba(234,215,155,0.9);cursor:pointer;box-shadow:0 14px 34px -10px rgba(19,26,33,0.34),inset 0 1px 0 rgba(255,255,255,0.6)" style-hover="background:rgba(251,239,207,0.7)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8892B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"></path></svg></button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:1px">
+    <span style="font-family:'Inter',sans-serif;font-size:19px;font-weight:700;color:#131A21;letter-spacing:-0.01em">{{ clResolvedN }} / {{ clTotalN }}</span>
+    <span style="display:flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:11px;font-weight:600">
+      <span style="color:#0F7A50">{{ clCheckedN }} checked</span>
+      <span style="color:#C8892B">{{ clSkippedN }} skipped</span>
+    </span>
+  </div>
+  <button onClick="{{ clCheckCur }}" title="Check &amp; next" style="pointer-events:auto;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(23,166,115,0.32);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);border:1px solid rgba(23,166,115,0.55);cursor:pointer;box-shadow:0 14px 34px -10px rgba(23,166,115,0.4),inset 0 1px 0 rgba(255,255,255,0.5)" style-hover="background:rgba(23,166,115,0.45)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F7A50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></button>
+</div>
+</sc-if>
+</div>
+</sc-if>
+
+<!-- ══ LEARN CHECKLIST (list mode, independent of Flight) ══ -->
+<sc-if value="{{ isLearnChecklist }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Learn Checklist" style="flex:1;display:flex;flex-direction:column;min-height:0;position:relative">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px;min-width:0">
+    <svg onClick="{{ backToPhases }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
+    <div style="min-width:0">
+      <h1 style="font-family: 'Inter',sans-serif; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: #131A21; margin: 0; line-height: 1.05; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 234px; height: 27px">{{ clTitle }}</h1>
+      <sc-if value="{{ clHasSub }}" hint-placeholder-val="{{ true }}">
+        
+      </sc-if>
+    </div>
+  </div>
+  <sc-if value="{{ clNoneDone }}" hint-placeholder-val="{{ true }}">
+    
+  </sc-if>
+  <div onClick="{{ clToggleStudy }}" title="Study mode" style="flex:none;width:40px;height:40px;border-radius:50%;border:1px solid {{ clStudyBorder }};background:{{ clStudyBg }};display:flex;align-items:center;justify-content:center;cursor:pointer">
+    <sc-if value="{{ clStudy }}" hint-placeholder-val="{{ false }}">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{{ clStudyIcon }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-.722-3.25"></path><path d="M2 8a10.645 10.645 0 0 0 20 0"></path><path d="m20 15-1.726-2.05"></path><path d="m4 15 1.726-2.05"></path><path d="m9 18 .722-3.25"></path></svg>
+    </sc-if>
+    <sc-if value="{{ clStudyOff }}" hint-placeholder-val="{{ true }}">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{{ clStudyIcon }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+    </sc-if>
+  </div>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px">
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+    <sc-for list="{{ clItems }}" as="c" hint-placeholder-count="7">
+      <div style="display:flex;align-items:center;gap:13px;padding:13px 15px;border-bottom:1px solid #ECEFF3">
+        <sc-if value="{{ c.leftShown }}" hint-placeholder-val="{{ true }}">
+          <span style="flex:1;font-family:'Inter',sans-serif;font-weight:600;font-size:14px;color:#1B242C;text-transform:capitalize">{{ c.label }}</span>
+        </sc-if>
+        <sc-if value="{{ c.leftHidden }}" hint-placeholder-val="{{ false }}">
+          <span style="flex:1;height:13px;border-radius:4px;background:#EAECEF"></span>
+        </sc-if>
+        <sc-if value="{{ c.rightShown }}" hint-placeholder-val="{{ true }}">
+          <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:12.5px;letter-spacing:0.02em;color:#5A6672;text-align:right;flex:none">{{ c.resp }}</span>
+        </sc-if>
+        <sc-if value="{{ c.rightHidden }}" hint-placeholder-val="{{ false }}">
+          <span style="width:52px;height:13px;border-radius:4px;background:#EAECEF;flex:none"></span>
+        </sc-if>
+      </div>
+    </sc-for>
+  </div>
+  </div>
+  <sc-if value="{{ clStudy }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:14px 20px 118px;pointer-events:none;background:linear-gradient(to top,#EEF1F4 68%,rgba(238,241,244,0))">
+      <div style="text-align:center;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#131A21;letter-spacing:-0.01em;margin-bottom:10px">{{ clRevealProg }}</div>
+      <button onClick="{{ clRevealBtn }}" style="pointer-events:auto;width:100%;font-family:'Inter',sans-serif;font-size:15px;font-weight:600;padding:14px;border-radius:14px;border:none;background:{{ clRevealBg }};color:#fff;cursor:pointer;box-shadow:0 12px 26px -12px rgba(14,78,168,0.85)">{{ clRevealLabel }}</button>
+    </div>
+  </sc-if>
+</div>
+</sc-if>
+
+<!-- ══ CHECKLIST (flight mode) ══ -->
+<sc-if value="{{ isFM }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Flight Mode" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 8px;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <h1 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ clTitle }}</h1>
+  <button onClick="{{ toList }}" style="flex:none;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;padding:8px 14px;border-radius:999px;border:1px solid #DDE2E8;background:#fff;color:#1B242C;cursor:pointer" style-hover="background:#F7F9FB">List mode</button>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:10px 20px 14px;display:flex;flex-direction:column;gap:14px">
+  <sc-if value="{{ fmHasDone }}" hint-placeholder-val="{{ false }}">
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden">
+    <sc-for list="{{ fmDone }}" as="d" hint-placeholder-count="2">
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:{{ d.rowBorder }};opacity:0.5">
+        <span style="width:15px;height:15px;flex:none;border-radius:50%;background:#1466D6;box-shadow:inset 0 0 0 3px #fff;border:1.6px solid #1466D6"></span>
+        <span style="flex:1;font-size:12.5px;font-weight:600;text-transform:lowercase">{{ d.label }}</span>
+        <span style="font-size:11.5px;font-weight:600;font-family:'Inter',sans-serif">{{ d.resp }}</span>
+      </div>
+    </sc-for>
+  </div>
+  </sc-if>
+  <sc-if value="{{ fmHasCurrent }}" hint-placeholder-val="{{ true }}">
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:16px;padding:20px 18px;box-shadow:0 14px 34px -20px rgba(19,26,33,0.4)">
+    <div style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#1466D6;font-weight:600">Current item · {{ fmProg }}</div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-top:10px">
+      <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:25px;line-height:1.1;text-transform:lowercase;letter-spacing:-0.01em">{{ fmCurLabel }}</span>
+      <span style="font-size:16px;font-weight:600;font-family:'Inter',sans-serif;text-align:right">{{ fmCurResp }}</span>
+    </div>
+    <sc-if value="{{ fmHasLimit }}" hint-placeholder-val="{{ false }}">
+      <div style="border-top:1px solid #ECEFF3;padding-top:10px;margin-top:14px">
+        <div style="font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#E7A614;font-weight:700;font-family:'Inter',sans-serif;margin-bottom:3px">{{ fmLimitTitle }}</div>
+        <div style="font-size:13px;color:#5A6672">{{ fmLimitBody }}</div>
+      </div>
+    </sc-if>
+  </div>
+  </sc-if>
+  <sc-if value="{{ fmAllDone }}" hint-placeholder-val="{{ false }}">
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:16px;padding:26px 18px;box-shadow:0 14px 34px -20px rgba(19,26,33,0.4);display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px">
+    <div style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#17A673;font-weight:600">Checklist complete</div>
+    <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:22px;letter-spacing:-0.01em">{{ clTitle }} — done</div>
+    <button onClick="{{ fmNextChecklist }}" style="margin-top:8px;font-size:13px;font-weight:600;font-family:'Inter',sans-serif;padding:10px 20px;border-radius:999px;border:none;background:#1466D6;color:#fff;cursor:pointer" style-hover="background:#0E4EA8">{{ fmNextLabel }}</button>
+  </div>
+  </sc-if>
+  <sc-for list="{{ fmUpcoming }}" as="u" hint-placeholder-count="3">
+    <div style="display:flex;align-items:center;gap:10px;padding:6px 14px;opacity:0.45">
+      <span style="width:15px;height:15px;flex:none;border-radius:50%;border:1.6px solid #C2C9D1"></span>
+      <span style="flex:1;font-size:12.5px;font-weight:600;text-transform:lowercase">{{ u.label }}</span>
+      <span style="font-size:11.5px;font-weight:600;font-family:'Inter',sans-serif">{{ u.resp }}</span>
+    </div>
+  </sc-for>
+</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px 26px;border-top:1px solid #DDE2E8;background:rgba(255,255,255,0.86);backdrop-filter:blur(14px)">
+  <button onClick="{{ fmUncheck }}" style="flex:1;padding:15px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;border-radius:14px;border:1px solid #DDE2E8;background:#fff;color:#1B242C;cursor:pointer" style-hover="background:#F7F9FB">Uncheck</button>
+  <span style="font-size:12px;font-family:'Inter',sans-serif;font-weight:500;color:#5A6672;flex:none">{{ fmProg }}</span>
+  <button onClick="{{ fmCheck }}" style="flex:1;padding:15px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;border-radius:14px;border:none;background:#1466D6;color:#fff;cursor:pointer;box-shadow:0 10px 22px -12px rgba(14,78,168,0.8)" style-hover="background:#0E4EA8">Check</button>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ LEARN ══ -->
+<sc-if value="{{ isLearn }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Learn" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:baseline;justify-content:space-between;gap:12px">
+  <div>
+    <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:#5A6672">Training</div>
+    <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:3px 0 0;line-height:1.05">Learn</h1>
+  </div>
+  <div onClick="{{ openAircraft }}" style="font-family: 'Inter',sans-serif; font-size: 11px; font-weight: 500; color: #5A6672; line-height: 1.25; cursor: pointer; display: flex; flex-direction: column; justify-content: center; width: 120px; height: 52px; box-sizing: border-box; border: 1px solid #DDE2E8; background: #fff; border-radius: 11px; padding: 7px 12px; box-shadow: 0 1px 2px rgba(19,26,33,0.03); overflow: hidden" style-hover="background:#F7F9FB">
+    <strong style="color:#1B242C;font-weight:600;font-size:15px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ aircraft }}</strong>
+    <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ acSub }}</span>
+  </div>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 0 28px;display:flex;flex-direction:column;gap:20px">
+  <sc-if value="{{ streakTop }}" hint-placeholder-val="{{ false }}">
+  <div style="padding:0 20px">
+    <div style="display:flex;align-items:stretch;gap:14px;background:#131A21;border-radius:16px;padding:14px 16px;box-shadow:0 14px 30px -18px rgba(19,26,33,0.8)">
+      <div style="flex:1;text-align:center;display:flex;flex-direction:column;justify-content:center">
+        <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:19px;color:#fff;line-height:1">14</div>
+        <div style="font-size:8.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;margin-top:3px">Streak</div>
+      </div>
+      <div style="width:1px;background:rgba(255,255,255,0.14);flex:none"></div>
+      <div style="flex:1;display:flex;justify-content:space-between;align-items:stretch;gap:14px;text-align:center;font-family:'Inter',sans-serif">
+        <div style="flex:1">
+          <div style="font-weight: 700; font-size: 19px; color: #e9e9ea; line-height: 1">{{ fitnessPct }}</div>
+          <div style="font-size:8.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:3px">Proficiency</div>
+        </div>
+        <div style="width:1px;background:rgba(255,255,255,0.14);flex:none"></div>
+        <div style="flex:1">
+          <div style="font-weight:700;font-size:19px;color:#fff;line-height:1">48</div>
+          <div style="font-size:8.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:3px">Landings</div>
+        </div>
+        <div style="width:1px;background:rgba(255,255,255,0.14);flex:none"></div>
+        <div style="flex:1">
+          <div style="font-weight:700;font-size:19px;color:#fff;line-height:1">42<span style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.65)"> s</span></div>
+          <div style="font-size:8.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:3px">Quickest</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+  <div style="padding:0 20px">
+    
+    <div style="padding:16px 12px 12px;display:flex;justify-content:center">
+      <div style="position:relative;width:100%;max-width:330px">
+      <svg width="100%" viewBox="0 0 320 280" style="display:block;overflow:visible">
+        <sc-for list="{{ radar.rings }}" as="ring" hint-placeholder-count="4">
+          <polygon points="{{ ring }}" fill="none" stroke="#AEB6C0" stroke-width="1"></polygon>
+        </sc-for>
+        <sc-for list="{{ radar.spokes }}" as="sp" hint-placeholder-count="4">
+          <line x1="{{ radar.cx }}" y1="{{ radar.cy }}" x2="{{ sp.x2 }}" y2="{{ sp.y2 }}" stroke="#AEB6C0" stroke-width="1"></line>
+        </sc-for>
+        <polygon points="{{ radar.poly }}" fill="rgba(20,102,214,0.16)" stroke="#1466D6" stroke-width="2" stroke-linejoin="round"></polygon>
+        <sc-for list="{{ radar.dots }}" as="d" hint-placeholder-count="4">
+          <circle cx="{{ d.cx }}" cy="{{ d.cy }}" r="3.5" fill="#1466D6" stroke="#fff" stroke-width="1.5"></circle>
+        </sc-for>
+      </svg>
+      <sc-for list="{{ radar.labels }}" as="l" hint-placeholder-count="6">
+        <div style="position:absolute;left:{{ l.left }};top:{{ l.top }};transform:{{ l.transform }};text-align:{{ l.textAlign }};font-family:'Inter',sans-serif;line-height:1.15;white-space:nowrap;pointer-events:none">
+          <div style="font-size:15px;font-weight:600;color:#131A21">{{ l.label }}</div>
+          <div style="font-size:14px;font-weight:700;color:#1466D6">{{ l.pct }}</div>
+        </div>
+      </sc-for>
+      </div>
+    </div>
+  </div>
+  <sc-if value="{{ streakBelowRadar }}" hint-placeholder-val="{{ true }}">
+  <div style="padding:0 20px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;margin:0 2px 11px">
+      <div style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21">Weekly streak</div>
+      <div style="font-size:12px;font-weight:600;color:#1466D6;font-family:'Inter',sans-serif">14 weeks</div>
+    </div>
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;padding:15px;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <div style="display:flex;gap:3px;align-items:flex-end;height:40px">
+        <sc-for list="{{ streakWeeks }}" as="w" hint-placeholder-count="26">
+          <span style="flex:1;height:100%;border-radius:4px;background:{{ w.bg }}"></span>
+        </sc-for>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:11px">
+        <span style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">Past 6 months</span>
+        <span style="font-size:11px;font-weight:600;color:#1466D6;background:#EAF0FA;border-radius:999px;padding:5px 11px;font-family:'Inter',sans-serif">4 weeks to next badge</span>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+  <div style="padding:0 20px">
+    <div style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0 2px 11px">Tests</div>
+    <div style="display:flex;gap:12px;padding:2px">
+      <sc-for list="{{ tests }}" as="t" hint-placeholder-count="3">
+        <div onClick="{{ t.onOpen }}" style="flex: 1; background: #131A21; color: #fff; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; justify-content: center; cursor: pointer; box-shadow: 0 14px 30px -18px rgba(19,26,33,0.8); height: 83px; box-sizing: border-box; width: 156px" style-hover="background:#232E38">
+          <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:16px;line-height:1.15">{{ t.label }}</span>
+          
+        </div>
+      </sc-for>
+    </div>
+  </div>
+  <div style="padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div>
+      <div style="font-family:'Inter',sans-serif;font-size:15px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0 2px 9px">History</div>
+      <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+        <sc-for list="{{ checkHistory }}" as="h" hint-placeholder-count="4">
+          <div style="display:flex;align-items:center;gap:8px;padding:11px 12px;border-bottom:1px solid #ECEFF3">
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:12.5px;color:#131A21;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ h.label }}</div>
+              <div style="font-size:10.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:1px">{{ h.date }}</div>
+            </div>
+            <span style="flex:none;font-family:'Inter',sans-serif;font-weight:700;font-size:12.5px;color:{{ h.scoreColor }}">{{ h.score }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Inter',sans-serif;font-size:15px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0 2px 9px">Learn again</div>
+      <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+        <sc-for list="{{ mistakes }}" as="m" hint-placeholder-count="4">
+          <div style="display:flex;align-items:center;gap:8px;padding:11px 12px;border-bottom:1px solid #ECEFF3">
+            <span style="flex:none;width:6px;height:6px;border-radius:50%;background:#E5484D"></span>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:12.5px;color:#131A21;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ m.topic }}</div>
+              <div style="font-size:10.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ m.sub }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+  <div style="padding:0 20px">
+    <div style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0 2px 11px">Knowledge</div>
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <sc-for list="{{ knowledge }}" as="k" hint-placeholder-count="5">
+        <div onClick="{{ k.onOpen }}" style="display:flex;align-items:center;gap:14px;padding:14px 15px;border-bottom:1px solid #ECEFF3;cursor:pointer" style-hover="background:#F7F9FB">
+          <span style="flex:1;font-weight:600;font-size:14px">{{ k.label }}</span>
+          
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5A6672" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+  <sc-if value="{{ streakBottom }}" hint-placeholder-val="{{ false }}">
+  <div style="padding:0 20px">
+    <div style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0 2px 11px">Weekly streak</div>
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;padding:15px;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <div style="display:flex;align-items:flex-end;gap:12px;margin-bottom:12px">
+        <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:28px;color:#131A21;line-height:1">14</div>
+        <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif;padding-bottom:3px">week streak · 92% consistent</div>
+      </div>
+      <div style="display:flex;gap:3px;align-items:flex-end;height:40px">
+        <sc-for list="{{ streakWeeks }}" as="w" hint-placeholder-count="26">
+          <span style="flex:1;height:100%;border-radius:4px;background:{{ w.bg }}"></span>
+        </sc-for>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:11px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:6px">
+        <span>Feb</span><span>Apr</span><span>Jun</span><span>Jul</span>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+  <div style="padding:0 20px">
+    <div style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0 2px 11px">Buddies</div>
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <div style="display:flex;align-items:center;gap:13px;padding:13px 15px;border-bottom:1px solid #ECEFF3">
+        <span style="width:30px;height:30px;border-radius:50%;background:#EFF3F7;color:#1466D6;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;font-family:'Inter',sans-serif">R</span>
+        <span style="flex:1;font-weight:600;font-size:14px">Ralf</span>
+        <span style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">streak 21</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:13px;padding:13px 15px">
+        <span style="width:30px;height:30px;border-radius:50%;background:#EFF3F7;color:#1466D6;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;font-family:'Inter',sans-serif">D</span>
+        <span style="flex:1;font-weight:600;font-size:14px">Dietmar</span>
+        <span style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">streak 8</span>
+      </div>
+    </div>
+    <button onClick="{{ noop }}" style="margin-top:14px;font-size:13px;font-weight:600;font-family:'Inter',sans-serif;padding:10px 18px;border-radius:999px;border:none;background:#1466D6;color:#fff;cursor:pointer" style-hover="background:#0E4EA8">Invite buddy</button>
+  </div>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ QUIZ ══ -->
+<sc-if value="{{ isQuiz }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Quick Check" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px">
+    <svg onClick="{{ backLearn }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+    <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ qTitle }}</h1>
+  </div>
+  <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:#1B242C">{{ aircraft }}</span>
+</div>
+<sc-if value="{{ qActive }}" hint-placeholder-val="{{ true }}">
+<div class="emi-scroll" style="flex:1;overflow:auto;display:flex;flex-direction:column;padding:18px 20px">
+  <div style="display:flex;align-items:baseline;justify-content:space-between">
+    <span style="font-family:'Inter',sans-serif;font-size:16px;font-weight:600;color:#131A21">{{ qCat }}</span>
+    <span style="font-size:11px;color:#5A6672;font-family:'Inter',sans-serif">{{ qProg }}</span>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:20px 0">
+    <div style="font-size:16px;font-weight:600;text-align:center;max-width:280px;line-height:1.4">{{ qText }}</div>
+    <sc-if value="{{ qIsCloze }}" hint-placeholder-val="{{ false }}">
+      <div style="align-self:stretch;background:#fff;border:1px solid #DDE2E8;border-radius:14px">
+        <div style="display:flex;align-items:center;gap:13px;padding:14px 15px">
+          
+          <span style="flex:1;font-weight:600;font-size:14px;text-transform:lowercase">{{ qClozeLabel }}</span>
+          <span style="width:70px;height:22px;background:#E7EBF0;border-radius:6px"></span>
+        </div>
+      </div>
+    </sc-if>
+    <div style="min-height:20px;font-size:13px;font-weight:600;color:#1466D6">{{ qFeedback }}</div>
+  </div>
+  <sc-if value="{{ qIsChoice }}" hint-placeholder-val="{{ true }}">
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;margin-bottom:10px;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+    <sc-for list="{{ qOpts }}" as="o" hint-placeholder-count="4">
+      <div onClick="{{ o.onPick }}" style="display:flex;align-items:center;gap:13px;padding:13px 15px;border-bottom:{{ o.rowBorder }};cursor:pointer;background:{{ o.bg }};color:{{ o.color }};opacity:{{ o.op }}" style-hover="background:{{ o.hoverBg }}">
+        <span style="font-family:'Inter',sans-serif;font-weight:600;width:16px;font-size:12px">{{ o.key }}</span>
+        <span style="flex:1;font-size:14px;font-weight:600">{{ o.label }}</span>
+      </div>
+    </sc-for>
+  </div>
+  </sc-if>
+  <sc-if value="{{ qIsOrder }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px">
+      <sc-for list="{{ qOrderSlots }}" as="sl" hint-placeholder-count="4">
+        <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:#fff;border:1px solid #DDE2E8;border-radius:12px;min-height:20px">
+          <span style="width:22px;height:22px;flex:none;border-radius:7px;background:#EEF3FB;color:#1466D6;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">{{ sl.num }}</span>
+          <span style="flex:1;font-size:14px;font-weight:600;color:#131A21">{{ sl.label }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <div style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#5A6672;font-weight:600;margin-bottom:8px">Tap steps in order</div>
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;margin-bottom:10px;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <sc-for list="{{ qPool }}" as="o" hint-placeholder-count="4">
+        <div onClick="{{ o.onPick }}" style="display:flex;align-items:center;gap:13px;padding:13px 15px;border-bottom:{{ o.rowBorder }};cursor:pointer;opacity:{{ o.op }}" style-hover="background:{{ o.hoverBg }}">
+          <span style="flex:1;font-size:14px;font-weight:600">{{ o.label }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </sc-if>
+</div>
+</sc-if>
+<sc-if value="{{ qDone }}" hint-placeholder-val="{{ false }}">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px">
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:20px;box-shadow:0 18px 40px -24px rgba(19,26,33,0.5);display:flex;flex-direction:column;align-items:center;text-align:center;padding:28px 24px;gap:8px;width:100%">
+    <div style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#5A6672;font-weight:600">{{ qTitle }} complete</div>
+    <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:44px;line-height:1;color:#1466D6">{{ qScore }}</div>
+    <div style="font-size:13px;color:#5A6672">correct answers</div>
+    <div style="display:flex;gap:10px;margin-top:10px">
+      <button onClick="{{ backLearn }}" style="font-size:13px;font-weight:600;font-family:'Inter',sans-serif;padding:10px 18px;border-radius:999px;border:1px solid #DDE2E8;background:#fff;color:#1B242C;cursor:pointer" style-hover="background:#F7F9FB">Done</button>
+      <button onClick="{{ qRestart }}" style="font-size:13px;font-weight:600;font-family:'Inter',sans-serif;padding:10px 18px;border-radius:999px;border:none;background:#1466D6;color:#fff;cursor:pointer" style-hover="background:#0E4EA8">Run again</button>
+    </div>
+  </div>
+</div>
+</sc-if>
+</div>
+</sc-if>
+
+<!-- ══ LIMITATIONS ══ -->
+<sc-if value="{{ isLims }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Limitations" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px">
+    <svg onClick="{{ backLims }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+    <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Limitations</h1>
+  </div>
+  <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:#1B242C">{{ aircraft }}</span>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px">
+  <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+    
+    
+    
+  </div>
+  
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+    <sc-for list="{{ lims }}" as="l" hint-placeholder-count="10">
+      <div style="display:flex;align-items:center;gap:13px;padding:13px 15px;border-bottom:1px solid #ECEFF3">
+        
+        <span style="flex:1;font-weight:600;font-size:14px">{{ l.label }}</span>
+        <span style="font-size:12.5px;font-weight:600;font-family:'Inter',sans-serif;text-align:right">{{ l.value }}</span>
+      </div>
+    </sc-for>
+  </div>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ LEARN LIMITATIONS (independent of Flight) ══ -->
+<sc-if value="{{ isLearnLims }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Learn Limitations" style="flex:1;display:flex;flex-direction:column;min-height:0;position:relative">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px">
+    <svg onClick="{{ backLearn }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+    <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Limitations</h1>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;flex:none">
+    <div onClick="{{ limToggleStudy }}" title="Study mode" style="flex:none;width:34px;height:34px;border-radius:50%;border:1px solid {{ limStudyBorder }};background:{{ limStudyBg }};display:flex;align-items:center;justify-content:center;cursor:pointer">
+      <sc-if value="{{ limStudy }}" hint-placeholder-val="{{ false }}">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="{{ limStudyIcon }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-.722-3.25"></path><path d="M2 8a10.645 10.645 0 0 0 20 0"></path><path d="m20 15-1.726-2.05"></path><path d="m4 15 1.726-2.05"></path><path d="m9 18 .722-3.25"></path></svg>
+      </sc-if>
+      <sc-if value="{{ limStudyOff }}" hint-placeholder-val="{{ true }}">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="{{ limStudyIcon }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+      </sc-if>
+    </div>
+    
+  </div>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px">
+  
+  
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+    <sc-for list="{{ limsLearn }}" as="l" hint-placeholder-count="10">
+      <div style="display:flex;align-items:center;gap:13px;padding:13px 15px;border-bottom:1px solid #ECEFF3">
+        <sc-if value="{{ l.leftShown }}" hint-placeholder-val="{{ true }}">
+          <span style="flex:1;font-weight:600;font-size:14px">{{ l.label }}</span>
+        </sc-if>
+        <sc-if value="{{ l.leftHidden }}" hint-placeholder-val="{{ false }}">
+          <span style="flex:1;height:13px;border-radius:4px;background:#EAECEF"></span>
+        </sc-if>
+        <sc-if value="{{ l.rightShown }}" hint-placeholder-val="{{ true }}">
+          <span style="font-size:12.5px;font-weight:600;font-family:'Inter',sans-serif;text-align:right">{{ l.value }}</span>
+        </sc-if>
+        <sc-if value="{{ l.rightHidden }}" hint-placeholder-val="{{ false }}">
+          <span style="width:52px;height:13px;border-radius:4px;background:#EAECEF;flex:none"></span>
+        </sc-if>
+      </div>
+    </sc-for>
+  </div>
+  </div>
+  <sc-if value="{{ limStudy }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:14px 20px 118px;pointer-events:none;background:linear-gradient(to top,#EEF1F4 68%,rgba(238,241,244,0))">
+      <div style="text-align:center;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#131A21;letter-spacing:-0.01em;margin-bottom:10px">{{ limRevealProg }}</div>
+      <button onClick="{{ limRevealNext }}" style="pointer-events:auto;width:100%;font-family:'Inter',sans-serif;font-size:15px;font-weight:600;padding:14px;border-radius:14px;border:none;background:{{ limRevealBg }};color:#fff;cursor:{{ limRevealCursor }};box-shadow:0 12px 26px -12px rgba(14,78,168,0.85)">{{ limRevealLabel }}</button>
+    </div>
+  </sc-if>
+</div>
+</sc-if>
+
+<!-- ══ PROFILE ══ -->
+<sc-if value="{{ isProfile }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Profile" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:12px">
+  <div style="display:flex;align-items:center;gap:10px;min-width:0">
+    <svg onClick="{{ closeProfile }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#131A21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none" aria-label="Back"><path d="m15 18-6-6 6-6"></path></svg>
+    <div>
+      
+      <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:3px 0 0;line-height:1.05">Profile</h1>
+    </div>
+  </div>
+  <div onClick="{{ openAircraft }}" style="font-family:'Inter',sans-serif;font-size:11px;font-weight:500;color:#5A6672;line-height:1.25;cursor:pointer;display:flex;flex-direction:column;justify-content:center;width:160px;height:52px;box-sizing:border-box;border:1px solid #DDE2E8;background:#fff;border-radius:11px;padding:7px 12px;box-shadow:0 1px 2px rgba(19,26,33,0.03);overflow:hidden" style-hover="background:#F7F9FB">
+    <strong style="color:#1B242C;font-weight:600;font-size:15px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ aircraft }}</strong>
+    <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ acSub }}</span>
+  </div>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:22px 20px;display:flex;flex-direction:column;gap:20px">
+  <div style="display:flex;align-items:center;gap:16px">
+    <span style="width:64px;height:64px;border-radius:50%;background:#EFF3F7;color:#1466D6;display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:600;font-size:24px;border:1px solid #DDE2E8">{{ userInitial }}</span>
+    <div>
+      <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:21px;line-height:1.1;letter-spacing:-0.01em">{{ userName }} Decker</div>
+      <div style="font-size:12px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:3px">ATPL · {{ aircraft }} type rating</div>
+    </div>
+  </div>
+  <div style="display:flex;background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+    <div style="flex:1;padding:15px;text-align:center;border-right:1px solid #ECEFF3"><div style="font-family:'Inter',sans-serif;font-weight:600;font-size:21px">14</div><div style="font-size:10.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:2px">day streak</div></div>
+    <div style="flex:1;padding:15px;text-align:center;border-right:1px solid #ECEFF3"><div style="font-family:'Inter',sans-serif;font-weight:600;font-size:21px">231</div><div style="font-size:10.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:2px">mastered</div></div>
+    <div style="flex:1;padding:15px;text-align:center"><div style="font-family:'Inter',sans-serif;font-weight:600;font-size:21px">96</div><div style="font-size:10.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:2px">days to check</div></div>
+  </div>
+  <button onClick="{{ noop }}" style="align-self:flex-start;font-size:13px;font-weight:600;font-family:'Inter',sans-serif;padding:9px 18px;border-radius:999px;border:1px solid #DDE2E8;background:#fff;color:#1B242C;cursor:pointer" style-hover="background:#F7F9FB">Sign out</button>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ CONFIG SUMMARY (plain view) ══ -->
+<sc-if value="{{ isConfig }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Config Summary" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px;min-width:0">
+    <svg onClick="{{ goFlight }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
+    <h1 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Config Summary</h1>
+  </div>
+  <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:#1B242C;flex:none">{{ aircraft }}</span>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:20px">
+  <sc-for list="{{ configGroups }}" as="g" hint-placeholder-count="3">
+    <div>
+      <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#5A6672;font-weight:600;margin:0 2px 10px">{{ g.title }}</div>
+      <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+        <sc-for list="{{ g.rows }}" as="r" hint-placeholder-count="4">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;border-bottom:{{ r.rowBorder }}">
+            <span style="font-size:13.5px;color:#5A6672">{{ r.k }}</span>
+            <span style="font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:#1B242C;text-align:right">{{ r.v }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ LIMITATIONS (plain view) ══ -->
+<sc-if value="{{ isLimsView }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Limitations View" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px;min-width:0">
+    <svg onClick="{{ goFlight }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
+    <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Limitations</h1>
+  </div>
+  <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:#1B242C;flex:none">{{ aircraft }}</span>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px">
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+    <sc-for list="{{ limsPlain }}" as="l" hint-placeholder-count="10">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;border-bottom:{{ l.rowBorder }}">
+        <span style="flex:1;font-weight:600;font-size:14px;color:#1B242C">{{ l.label }}</span>
+        <span style="font-family:'Inter',sans-serif;font-size:12.5px;font-weight:600;color:#1B242C;text-align:right">{{ l.value }}</span>
+      </div>
+    </sc-for>
+  </div>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ SOPs ══ -->
+<sc-if value="{{ isAnySops }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="SOPs" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px;min-width:0">
+    <svg onClick="{{ sopsBack }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
+    <div>
+      <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:2px 0 0;line-height:1.05">SOPs</h1>
+    </div>
+  </div>
+  <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:#1B242C;flex:none">{{ aircraft }}</span>
+</div>
+<div style="padding:6px 20px 2px;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0.06em;color:#5A6672;font-weight:600">24 standard operating procedures</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:14px 20px 28px;display:flex;flex-direction:column;gap:20px">
+  <sc-for list="{{ sopGroups }}" as="g" hint-placeholder-count="4">
+    <div>
+      <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#547397;font-weight:600;margin:0 2px 8px">{{ g.title }}</div>
+      <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+        <sc-for list="{{ g.items }}" as="sp" hint-placeholder-count="6">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 15px;border-bottom:{{ sp.rowBorder }}">
+            <span style="flex:1;font-family:'Inter',sans-serif;font-weight:600;font-size:14px;color:#1B242C">{{ sp.label }}</span>
+            <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.02em;color:#547397;text-align:right;flex:none">{{ sp.ref }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ KNOWLEDGE TOPIC ══ -->
+<sc-if value="{{ isTopic }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Topic" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;gap:8px">
+  <svg onClick="{{ backLearn }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><path d="m15 18-6-6 6-6"></path></svg>
+  <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ topicTitle }}</h1>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:14px 20px 28px;display:flex;flex-direction:column;gap:16px">
+  
+  <sc-for list="{{ topicSections }}" as="sec" hint-placeholder-count="3">
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;padding:16px;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <div style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#1466D6;font-weight:600">{{ sec.kicker }}</div>
+      <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:17px;color:#131A21;margin:5px 0 8px;letter-spacing:-0.01em">{{ sec.title }}</div>
+      <div style="font-size:13.5px;color:#3C4650;line-height:1.5">{{ sec.body }}</div>
+      <sc-if value="{{ sec.hasFacts }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:12px;border-top:1px solid #ECEFF3;padding-top:10px;display:flex;flex-direction:column;gap:8px">
+          <sc-for list="{{ sec.facts }}" as="ft" hint-placeholder-count="3">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px">
+              <span style="font-size:13px;color:#5A6672">{{ ft.k }}</span>
+              <span style="font-family:'Inter',sans-serif;font-size:12.5px;font-weight:600;color:#1B242C;text-align:right">{{ ft.v }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+    </div>
+  </sc-for>
+  
+</div>
+</div>
+</sc-if>
+
+<!-- ══ TYPE RATING SELECT ══ -->
+<sc-if value="{{ isTypeRating }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Type Rating" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;gap:8px">
+  <svg onClick="{{ backLearn }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+  <h1 style="font-family:'Inter',sans-serif;font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Type Rating</h1>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:14px 20px 28px;display:flex;flex-direction:column;gap:22px">
+  <div style="font-size:13px;color:#5A6672;line-height:1.4">Proficiency Checks — detailed sessions per device. Pick a session to start.</div>
+  <sc-for list="{{ trGroups }}" as="g" hint-placeholder-count="2">
+    <div>
+      <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#5A6672;font-weight:600;margin:0 2px 10px">{{ g.title }}</div>
+      <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+        <sc-for list="{{ g.items }}" as="t" hint-placeholder-count="5">
+          <div onClick="{{ t.onOpen }}" style="display:flex;align-items:center;gap:13px;padding:14px 15px;border-bottom:{{ t.rowBorder }};cursor:pointer" style-hover="background:#F7F9FB">
+            <span style="width:19px;height:19px;flex:none;border-radius:50%;border:1.6px solid {{ t.dotBorder }};background:{{ t.dotBg }};box-shadow:{{ t.dotShadow }}"></span>
+            <span style="flex:1;font-weight:600;font-size:14px;color:#1B242C">{{ t.label }}</span>
+            <span style="width:70px;height:6px;border-radius:3px;background:#E7EBF0;position:relative;overflow:hidden;flex:none"><span style="position:absolute;left:0;top:0;bottom:0;width:{{ t.pct }};background:#1466D6;border-radius:3px"></span></span>
+            <span style="font-family:'Inter',sans-serif;font-size:11.5px;font-weight:600;color:#5A6672;width:34px;text-align:right;flex:none">{{ t.pct }}</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5A6672" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 18 6-6-6-6"></path></svg>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ LEADERBOARD ══ -->
+<sc-if value="{{ isLeaderboard }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Leaderboard" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;gap:8px">
+  <svg onClick="{{ closeLeaderboard }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+  <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Leaderboard</h1>
+</div>
+<div style="display:flex;gap:6px;padding:14px 20px 0">
+  <sc-for list="{{ lbFilters }}" as="f" hint-placeholder-count="3">
+    <span onClick="{{ f.onPick }}" style="font-size:12px;font-weight:600;padding:7px 14px;border-radius:999px;border:1px solid {{ f.border }};background:{{ f.bg }};color:{{ f.color }};cursor:pointer">{{ f.label }}</span>
+  </sc-for>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:20px">
+  <div style="display:flex;align-items:flex-end;justify-content:center;gap:10px">
+    <sc-for list="{{ lbPodium }}" as="p" hint-placeholder-count="3">
+      <div style="flex:1;max-width:100px;display:flex;flex-direction:column;align-items:center;gap:8px">
+        <span style="width:{{ p.size }};height:{{ p.size }};border-radius:50%;background:#EFF3F7;color:#1466D6;display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:600;font-size:18px;border:2px solid {{ p.ring }}">{{ p.initial }}</span>
+        <div style="text-align:center">
+          <div style="font-weight:600;font-size:12.5px;color:#1B242C;line-height:1.1">{{ p.name }}</div>
+          <div style="font-family:'Inter',sans-serif;font-size:11px;color:#5A6672;margin-top:1px">{{ p.pts }}</div>
+        </div>
+        <div style="width:100%;background:{{ p.barBg }};border-radius:10px 10px 0 0;height:{{ p.barH }};display:flex;align-items:flex-start;justify-content:center;padding-top:8px;color:{{ p.rankColor }};font-family:'Inter',sans-serif;font-weight:600;font-size:18px">{{ p.rank }}</div>
+      </div>
+    </sc-for>
+  </div>
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+    <sc-for list="{{ lbRows }}" as="r" hint-placeholder-count="6">
+      <div style="display:flex;align-items:center;gap:13px;padding:13px 15px;border-bottom:{{ r.rowBorder }};background:{{ r.bg }}">
+        <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;width:34px;flex:none;color:{{ r.rankColor }}">{{ r.rank }}</span>
+        <span style="width:30px;height:30px;flex:none;border-radius:50%;background:#EFF3F7;color:#1466D6;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;font-family:'Inter',sans-serif">{{ r.initial }}</span>
+        <div style="flex:1;min-width:0"><div style="font-weight:600;font-size:14px;color:{{ r.whoColor }}">{{ r.name }}</div><div style="font-size:11px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:1px">{{ r.city }}</div></div>
+        <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;color:#1B242C">{{ r.pts }}</span>
+      </div>
+    </sc-for>
+  </div>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ LOGBOOK ══ -->
+<sc-if value="{{ isLogbook }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Logbook" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;gap:8px">
+  <svg onClick="{{ closeLogbook }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+  <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Currency</h1>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:22px">
+  <div style="display:flex;background:#131A21;border-radius:16px;overflow:hidden;box-shadow:0 14px 30px -20px rgba(19,26,33,0.8);flex:none">
+    <sc-for list="{{ logStats }}" as="ls" hint-placeholder-count="3">
+      <div style="flex:1;padding:16px 12px;text-align:center;border-right:{{ ls.rowBorder }}">
+        <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:22px;color:#fff">{{ ls.value }}</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.65);font-family:'Inter',sans-serif;margin-top:3px">{{ ls.label }}</div>
+      </div>
+    </sc-for>
+  </div>
+  <sc-for list="{{ logMonths }}" as="m" hint-placeholder-count="2">
+    <div>
+      <div style="font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#5A6672;font-weight:600;margin:0 2px 10px">{{ m.month }}</div>
+      <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+        <sc-for list="{{ m.flights }}" as="f" hint-placeholder-count="3">
+          <div onClick="{{ noop }}" style="display:flex;align-items:center;gap:13px;padding:14px 15px;border-bottom:{{ f.rowBorder }};cursor:pointer" style-hover="background:#F7F9FB">
+            <div style="width:44px;flex:none">
+              <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:16px;color:#131A21;line-height:1">{{ f.day }}</div>
+              <div style="font-size:10px;color:#5A6672;font-family:'Inter',sans-serif">{{ f.time }}</div>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px"><strong style="font-family:'Inter',sans-serif;font-weight:600;font-size:15px;color:#1B242C">{{ f.from }}</strong><svg width="16" height="10" viewBox="0 0 24 14" fill="none" stroke="#C2C9D1" stroke-width="1.6"><path d="M0 7h20m0 0-4-4m4 4-4 4"></path></svg><strong style="font-family:'Inter',sans-serif;font-weight:600;font-size:15px;color:#1B242C">{{ f.to }}</strong></div>
+              <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:2px">{{ f.aircraft }} · {{ f.role }}</div>
+            </div>
+            <div style="text-align:right;flex:none">
+              <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;color:#1B242C">{{ f.dur }}</div>
+              <div style="font-size:9.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:2px">block</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ ORGANISATIONS ══ -->
+<sc-if value="{{ isOrgs }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Organisations" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px">
+    <svg onClick="{{ closeOrgs }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+    <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Organisations</h1>
+  </div>
+  <button onClick="{{ noop }}" style="flex:none;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;padding:8px 14px;border-radius:999px;border:none;background:#1466D6;color:#fff;cursor:pointer;display:flex;align-items:center;gap:5px" style-hover="background:#0E4EA8"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>Join</button>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:16px">
+  <sc-for list="{{ orgs }}" as="o" hint-placeholder-count="2">
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <div style="display:flex;align-items:center;gap:13px;padding:16px 15px;border-bottom:1px solid #ECEFF3">
+        <span style="width:44px;height:44px;border-radius:10px;flex:none;display:flex;align-items:center;justify-content:center;background:{{ o.iconBg }};color:{{ o.iconColor }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ o.iconPath }}"></path></svg></span>
+        <div style="flex:1;min-width:0">
+          <div style="font-weight:600;font-size:16px;color:#1B242C">{{ o.name }}</div>
+          <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:2px">{{ o.kind }} · {{ o.role }}</div>
+        </div>
+        <span style="font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:0.08em;text-transform:uppercase;color:#17A673;font-weight:600;display:flex;align-items:center;gap:5px"><span style="width:6px;height:6px;border-radius:50%;background:#17A673;box-shadow:0 0 0 3px rgba(23,166,115,0.14)"></span>Active</span>
+      </div>
+      <div style="display:flex">
+        <sc-for list="{{ o.stats }}" as="st" hint-placeholder-count="3">
+          <div style="flex:1;padding:13px;text-align:center;border-right:{{ st.rowBorder }}">
+            <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:19px;color:#131A21">{{ st.value }}</div>
+            <div style="font-size:10px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:2px">{{ st.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div onClick="{{ noop }}" style="display:flex;align-items:center;justify-content:space-between;padding:13px 15px;border-top:1px solid #ECEFF3;cursor:pointer" style-hover="background:#F7F9FB">
+        <span style="font-size:13px;font-weight:600;color:#1466D6">View members &amp; fleet</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5A6672" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ HANGARS ══ -->
+<sc-if value="{{ isHangars }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Hangars" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+  <div style="display:flex;align-items:center;gap:8px">
+    <svg onClick="{{ closeHangars }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+    <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Hangars</h1>
+  </div>
+  <button onClick="{{ noop }}" style="flex:none;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;padding:8px 14px;border-radius:999px;border:none;background:#1466D6;color:#fff;cursor:pointer;display:flex;align-items:center;gap:5px" style-hover="background:#0E4EA8"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>New</button>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:16px">
+  <sc-for list="{{ hangars }}" as="hg" hint-placeholder-count="3">
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <div style="display:flex;align-items:center;gap:13px;padding:14px 15px;border-bottom:1px solid #ECEFF3">
+        <span style="width:38px;height:38px;border-radius:9px;flex:none;display:flex;align-items:center;justify-content:center;background:#EFF3F7;color:#1466D6"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21V10l8-5 8 5v11M9 21v-6h6v6"></path></svg></span>
+        <div style="flex:1;min-width:0">
+          <div style="font-weight:600;font-size:15px;color:#1B242C">{{ hg.name }}</div>
+          <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:1px">{{ hg.org }}</div>
+        </div>
+        <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:#5A6672">{{ hg.count }}</span>
+      </div>
+      <sc-for list="{{ hg.craft }}" as="c" hint-placeholder-count="2">
+        <div style="display:flex;align-items:center;gap:11px;padding:12px 15px;border-bottom:{{ c.rowBorder }}">
+          <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#C2C9D1"></span>
+          <span style="flex:1;font-weight:600;font-size:13.5px;color:#1B242C">{{ c.name }}</span>
+          <span style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif">{{ c.reg }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </sc-for>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ STATS / ACHIEVEMENTS ══ -->
+<sc-if value="{{ isStats }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Achievements" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;gap:8px">
+  <svg onClick="{{ closeStats }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+  <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Training Summary</h1>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:26px">
+
+  <div style="position:relative;background:linear-gradient(160deg,#0E4EA8 0%,#1466D6 70%,#4C93EF 100%);border-radius:20px;padding:22px;color:#fff;box-shadow:0 18px 40px -24px rgba(14,78,168,0.7);flex:none">
+    <div style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.82)">Proficiency</div>
+    <div style="display:flex;align-items:baseline;gap:8px;margin-top:4px">
+      <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:52px;line-height:1;color:{{ fitnessColor }}">{{ fitnessPct }}</span>
+      <span style="font-size:13px;color:rgba(255,255,255,0.9)">exam readiness</span>
+    </div>
+    <div style="height:6px;border-radius:3px;background:rgba(255,255,255,0.22);margin-top:14px;overflow:hidden"><span style="display:block;height:100%;width:{{ fitnessPct }};background:#fff;border-radius:3px"></span></div>
+    <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-top:10px;line-height:1.4">+4% this week · next check in 96 days</div>
+  </div>
+
+  <div>
+    <div style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0 2px 11px">Statistics</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <sc-for list="{{ statCards }}" as="s" hint-placeholder-count="4">
+        <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;padding:15px;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+          <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:26px;color:#131A21;line-height:1">{{ s.value }}</div>
+          <div style="font-size:11px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:4px">{{ s.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div>
+    <div style="font-family:'Inter',sans-serif;font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0 2px 11px">Badges</div>
+    <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+      <sc-for list="{{ achievements }}" as="a" hint-placeholder-count="4">
+        <div style="display:flex;align-items:center;gap:13px;padding:14px 15px;border-bottom:{{ a.rowBorder }};opacity:{{ a.op }}">
+          <span style="width:38px;height:38px;border-radius:10px;flex:none;display:flex;align-items:center;justify-content:center;background:{{ a.iconBg }};color:{{ a.iconColor }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"></path></svg></span>
+          <div style="flex:1;min-width:0">
+            <div style="font-weight:600;font-size:14px;color:#1B242C">{{ a.title }}</div>
+            <div style="font-size:11.5px;color:#5A6672;margin-top:1px">{{ a.desc }}</div>
+          </div>
+          <span style="font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:0.08em;text-transform:uppercase;color:{{ a.tagColor }};font-weight:600">{{ a.tag }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ AIRCRAFT SELECT ══ -->
+<sc-if value="{{ isAircraftSelect }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Aircraft" style="flex:1;display:flex;flex-direction:column;min-height:0">
+<div style="padding:60px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:8px">
+  <div style="display:flex;align-items:center;gap:8px">
+    <svg onClick="{{ closeAircraft }}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer"><path d="m15 18-6-6 6-6"></path></svg>
+    <h1 style="font-family:'Inter',sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#131A21;margin:0;line-height:1.05">Hangars</h1>
+  </div>
+  <button onClick="{{ goProfile }}" aria-label="Profile" style="flex:none;width:38px;height:38px;border-radius:999px;border:2px solid #1466D6;background:#EFF3F7;color:#1466D6;display:flex;align-items:center;justify-content:center;cursor:pointer" style-hover="background:#E4EBF2"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg></button>
+</div>
+<div class="emi-scroll" style="flex:1;overflow:auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:16px">
+  <div style="font-size:13px;color:#5A6672;line-height:1.4">Select the aircraft for your session. Checklists, limitations and tests update to match.</div>
+  <div style="background:#fff;border:1px solid #DDE2E8;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(19,26,33,0.03)">
+    <sc-for list="{{ acOptions }}" as="a" hint-placeholder-count="3">
+      <div onClick="{{ a.onPick }}" style="display:flex;align-items:center;gap:13px;padding:15px;border-bottom:{{ a.rowBorder }};cursor:pointer;background:{{ a.bg }}" style-hover="background:#F7F9FB">
+        <span style="width:38px;height:38px;border-radius:9px;flex:none;display:flex;align-items:center;justify-content:center;background:#EFF3F7;color:#1466D6"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l20-6-6 20-4-8-8-4-2-2z"></path></svg></span>
+        <div style="flex:1;min-width:0">
+          <div style="font-weight:600;font-size:15px;color:#1B242C">{{ a.name }}</div>
+          <div style="font-size:11.5px;color:#5A6672;font-family:'Inter',sans-serif;margin-top:1px">{{ a.reg }} · {{ a.type }}</div>
+        </div>
+        <span style="width:22px;height:22px;flex:none;border-radius:50%;border:1.6px solid {{ a.dotBorder }};background:{{ a.dotBg }};display:inline-flex;align-items:center;justify-content:center">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="opacity:{{ a.markOp }}"><path d="M20 6 9 17l-5-5"></path></svg>
+        </span>
+      </div>
+    </sc-for>
+  </div>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ SEARCH OVERLAY (global) ══ -->
+<sc-if value="{{ searchOpen }}" hint-placeholder-val="{{ false }}">
+<div onClick="{{ closeSearch }}" style="position:absolute;inset:0;z-index:60;display:flex;flex-direction:column;align-items:center;padding:74px 16px 0;background:rgba(19,26,33,0.34);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)">
+<div onClick="{{ stopEvt }}" style="width:100%;max-width:372px;max-height:calc(100% - 150px);display:flex;flex-direction:column;overflow:hidden;background:#fff;border:1px solid #DDE2E8;border-radius:14px;box-shadow:0 26px 64px -18px rgba(19,26,33,0.5)">
+  <div style="display:flex;align-items:center;gap:9px;padding:0 13px;height:50px;border-bottom:1px solid #ECEFF3;flex:none">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A97A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+    <input id="emiSearchInput" autoFocus="{{ true }}" value="{{ searchQuery }}" onChange="{{ onSearch }}" placeholder="Type to search…" style="flex:1;min-width:0;border:none;outline:none;background:transparent;font-family:'Inter',sans-serif;font-size:14.5px;color:#131A21;height:100%">
+    <sc-if value="{{ searchHasQuery }}" hint-placeholder-val="{{ false }}">
+      <svg onClick="{{ clearSearch }}" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8A97A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex:none"><circle cx="12" cy="12" r="10"></circle><path d="M15 9l-6 6M9 9l6 6"></path></svg>
+    </sc-if>
+    <span style="flex:none;display:inline-flex;align-items:center;font-family:'Inter',sans-serif;font-size:10.5px;font-weight:600;color:#8A97A4;background:#F2F5F8;border:1px solid #E4E9EF;border-radius:6px;padding:2px 6px">esc</span>
+  </div>
+  <div class="emi-scroll" style="flex:1;overflow:auto;padding:6px;display:flex;flex-direction:column;gap:2px">
+    <sc-if value="{{ searchNoResults }}" hint-placeholder-val="{{ false }}">
+      <div style="text-align:center;padding:36px 20px;color:#5A6672;font-family:'Inter',sans-serif;font-size:13.5px">No results found.</div>
+    </sc-if>
+    <sc-for list="{{ searchGroups }}" as="g" hint-placeholder-count="2">
+      <div style="display:flex;flex-direction:column;gap:1px;padding-bottom:4px">
+        <div style="padding:9px 9px 5px;font-family:'Inter',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:#8A97A4">{{ g.heading }}</div>
+        <sc-for list="{{ g.items }}" as="r" hint-placeholder-count="3">
+          <div onClick="{{ r.onOpen }}" style="display:flex;align-items:center;gap:11px;padding:9px 9px;border-radius:8px;cursor:pointer" style-hover="background:#F2F5F8">
+            <span style="width:30px;height:30px;border-radius:8px;flex:none;display:flex;align-items:center;justify-content:center;background:#EFF3F7;color:#1466D6"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ r.iconPath }}"></path></svg></span>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:13.5px;color:#1B242C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.label }}</div>
+              <div style="font-size:11px;color:#8A97A4;font-family:'Inter',sans-serif;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.cat }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </sc-for>
+  </div>
+</div>
+</div>
+</sc-if>
+
+<!-- ══ TAB BAR (floating, liquid-glass) ══ -->
+<div style="position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:center;align-items:center;gap:10px;padding:0 14px 20px;pointer-events:none;z-index:30">
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 130px; backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px); -webkit-mask-image: linear-gradient(to top,#000 45%,transparent); mask-image: linear-gradient(to top,#000 45%,transparent); pointer-events: none"></div>
+  <div style="pointer-events: auto; display: flex; gap: 2px; width: 239px; justify-content: space-around; background: rgba(255,255,255,0.62); backdrop-filter: blur(26px) saturate(180%); -webkit-backdrop-filter: blur(26px) saturate(180%); border: 1px solid rgba(255,255,255,0.75); border-radius: 28px; padding: 6px; box-shadow: 0 14px 34px -10px rgba(19,26,33,0.34),0 2px 8px rgba(19,26,33,0.08),inset 0 1px 0 rgba(255,255,255,0.6); height: 53px">
+    <div onClick="{{ goHome }}" style="display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;color:{{ tHome }};padding:7px 15px;border-radius:22px;background:{{ bHome }};transition:background 0.18s">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v10h5v-6h4v6h5V10"></path></svg>
+      <span style="font-size:10px;font-weight:{{ wHome }};letter-spacing:0.01em">Start</span>
+    </div>
+    <div onClick="{{ goFlight }}" style="display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;color:{{ tFlight }};padding:7px 15px;border-radius:22px;background:{{ bFlight }};transition:background 0.18s">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l20-6-6 20-4-8-8-4-2-2z"></path></svg>
+      <span style="font-size:10px;font-weight:{{ wFlight }};letter-spacing:0.01em">Flight</span>
+    </div>
+    <div onClick="{{ goLearn }}" style="display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;color:{{ tLearn }};padding:7px 15px;border-radius:22px;background:{{ bLearn }};transition:background 0.18s">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 012-2h11v16H6a2 2 0 00-2 2V5z"></path><path d="M17 3v16"></path></svg>
+      <span style="font-size:10px;font-weight:{{ wLearn }};letter-spacing:0.01em">Learn</span>
+    </div>
+  </div>
+  <div onClick="{{ goSearch }}" aria-label="Search" style="pointer-events: auto; flex: none; width: 66px; height: 62px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer; color: {{ tSearch }}; background: {{ bSearchBtn }}; backdrop-filter: blur(26px) saturate(180%); -webkit-backdrop-filter: blur(26px) saturate(180%); border: 1px solid rgba(255,255,255,0.75); box-shadow: 0 14px 34px -10px rgba(19,26,33,0.34),0 2px 8px rgba(19,26,33,0.08),inset 0 1px 0 rgba(255,255,255,0.6); transition: background 0.18s">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+    <span style="font-size:10px;font-weight:{{ wSearch }};letter-spacing:0.01em">Search</span>
+  </div>
+</div>
+
+</div>
+</x-import>
+<div style="font-size:12px;color:#5A6672;max-width:420px;text-align:center">Fully clickable: tabs · Hangar switches aircraft · Flight → Normals/Abnormal/Emergency → checklists (list + flight mode) · Learn → Quick Check quiz &amp; Limitations training.</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:900,&quot;height&quot;:1020},&quot;userName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Jonas&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;aircraft&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;A320neo&quot;,&quot;options&quot;:[&quot;A320&quot;,&quot;A320neo&quot;,&quot;DA40&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;proficiency&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:87,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;streakPlacement&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Below header&quot;,&quot;options&quot;:[&quot;Below header&quot;,&quot;Below radar&quot;,&quot;Bottom&quot;,&quot;Hidden&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;rMemoryItems&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:55,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Radar&quot;},&quot;rLimitation&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:18,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Radar&quot;},&quot;rSystem&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:70,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Radar&quot;},&quot;rAirspace&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:12,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Radar&quot;},&quot;rSpeed&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:40,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Radar&quot;},&quot;rFirstAid&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:95,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Radar&quot;}}">
+class Component extends DCLogic {
+  state = { screen: 'home', group: 'normals', phaseIdx: 1, checks: {}, skips: {}, aircraft: null, quiz: null, limRead: { 0: true, 3: true }, limReadLearn: { 0: true, 3: true }, studyCl: false, revealCl: 0, studyLim: false, revealLim: 0, leadTab: 0, phasesOrigin: 'flight', searchQuery: '' };
+
+  searchIndex() {
+    if (this._searchIdx) return this._searchIdx;
+    const D = Component.DATA, out = [];
+    const gl = { normals: 'Normals', abnormal: 'Abnormal', emergency: 'Emergency', memory: 'Memory Items' };
+    Object.keys(D).forEach((g) => D[g].forEach((ph, idx) => {
+      out.push({ label: ph.label, cat: gl[g] + ' · checklist', kind: 'checklist', group: g, idx });
+      ph.items.forEach((it) => out.push({ label: it[0], cat: gl[g] + ' · ' + ph.label, kind: 'item', group: g, idx }));
+    }));
+    Component.LIMS.forEach(([l, v]) => out.push({ label: l, cat: 'Limitation · ' + v, kind: 'lim' }));
+    ['System', 'Airspace', 'First Aid', 'Memory Items'].forEach((k) => out.push({ label: k, cat: 'Knowledge topic', kind: 'topic', topicKey: k }));
+    ['Quick Check', 'Proficiency Check', 'Type Rating'].forEach((k) => out.push({ label: k, cat: 'Practice', kind: 'quiz' }));
+    this._searchIdx = out;
+    return out;
+  }
+
+  static DATA = {
+    normals: [
+      { id: 'brief', label: 'Departure Briefing', sub: 'Departure briefing', items: [['aircraft config', 'reviewed'], ['performance & T.O data', 'computed'], ['weather & NOTAMs', 'reviewed'], ['taxi routing', 'briefed']] },
+      { id: 'beforestart', label: 'Before Start', sub: 'Down to the line', items: [['cockpit prep', 'completed'], ['gear pins and covers', 'removed'], ['signs', 'on/auto'], ['fuel quantity', '___ kg', { t: 'Limitation — fuel temperature', b: 'max +54 °C · min −43 °C (outer tanks −40 °C)' }], ['T.O data', 'set'], ['baro ref', '___ set (both)'], ['windows / doors', 'closed (both)'], ['beacon', 'on'], ['thr levers', 'idle'], ['parking brake', 'as rqrd']] },
+      { id: 'afterstart', label: 'After Start', sub: 'After engine start', items: [['anti ice', 'as rqrd'], ['ECAM status', 'checked'], ['pitch trim', '___ set'], ['rudder trim', 'zero']] },
+      { id: 'beforetakeoff', label: 'Before Takeoff', sub: 'Down to the line', items: [['flight controls', 'checked (both)'], ['flt instruments', 'checked (both)'], ['briefing', 'confirmed'], ['flap setting', 'conf ___'], ['V1, VR, V2 / FLEX', '___ set'], ['ECAM memo', 'T.O — no blue'], ['cabin', 'ready']] },
+      { id: 'aftertakeoff', label: 'After Takeoff / Climb', sub: 'Clean-up & climb', items: [['ldg gear', 'up'], ['flaps', 'retracted'], ['packs', 'on'], ['baro ref', '___ set']] },
+      { id: 'approach', label: 'Approach', sub: 'Descent & approach', items: [['briefing', 'confirmed'], ['ECAM status', 'checked'], ['seat belts', 'on'], ['baro ref', '___ set'], ['minimum', '___ set'], ['engine mode', 'as rqrd']] },
+      { id: 'landing', label: 'Landing', sub: 'Final items', items: [['cabin crew', 'advised'], ['A/THR', 'speed / off'], ['autobrake', 'as rqrd'], ['ECAM memo', 'LDG — no blue']] },
+      { id: 'afterlanding', label: 'After Landing', sub: 'Vacate & clean up', items: [['flaps', 'retracted'], ['spoilers', 'disarmed'], ['APU', 'as rqrd'], ['radar', 'off'], ['predictive windshear', 'off']] },
+      { id: 'parking', label: 'Parking', sub: 'At the gate', items: [['APU bleed', 'as rqrd'], ['engines', 'off'], ['seat belts', 'off'], ['ext lt', 'as rqrd'], ['fuel pumps', 'off'], ['park brk / chocks', 'as rqrd']] },
+      { id: 'securing', label: 'Securing the Aircraft', sub: 'Cockpit shutdown', items: [['ADIRS', 'off'], ['oxygen', 'off'], ['APU bleed', 'off'], ['emer exit lt', 'off'], ['signs', 'off'], ['APU / BAT', 'off']] },
+    ],
+    abnormal: [
+      { id: 'engfail', label: 'Engine Failure After V1', items: [['thrust', 'TOGA / MCT'], ['heading', 'runway track'], ['speed', 'V2'], ['ECAM actions', 'initiate']] },
+      { id: 'bleedloss', label: 'Dual Bleed Loss', items: [['descent to FL 100', 'initiate'], ['cabin pressure', 'monitor'], ['ECAM actions', 'complete']] },
+      { id: 'elec', label: 'ELEC Emergency Config', items: [['land ASAP', 'consider'], ['fuel gravity feed', 'check'], ['approach capability', 'CAT 1 only']] },
+    ],
+    emergency: [
+      { id: 'emerdesc', label: 'Emergency Descent', items: [['crew oxy masks', 'on'], ['signs', 'on'], ['descent', 'initiate'], ['thr levers', 'idle'], ['speed brakes', 'full']] },
+      { id: 'engfire', label: 'Engine Fire', items: [['thr lever (affected)', 'idle'], ['eng master (affected)', 'off'], ['eng fire p/b', 'push'], ['agent 1', 'discharge']] },
+      { id: 'brakes', label: 'Loss of Braking', items: [['rev', 'max'], ['brake pedals', 'release'], ['a/skid & n/w strg', 'off'], ['brake pedals', 'press'], ['max brake pressure', '1000 psi']] },
+      { id: 'unrelspd', label: 'Unreliable Speed', items: [['AP / FD', 'off'], ['A/THR', 'off'], ['pitch / thrust', '15° / TOGA']] },
+    ],
+    memory: [
+      { id: 'm_emerdesc', label: 'Emergency Descent', items: [['crew oxy masks', 'on'], ['signs', 'on'], ['descent', 'initiate'], ['thr levers', 'idle'], ['speed brakes', 'full']] },
+      { id: 'm_engfire', label: 'Engine Fire', items: [['thr lever (affected)', 'idle'], ['eng master (affected)', 'off'], ['eng fire p/b', 'push'], ['agent 1', 'discharge']] },
+      { id: 'm_brakes', label: 'Loss of Braking', items: [['rev', 'max'], ['brake pedals', 'release'], ['a/skid & n/w strg', 'off'], ['brake pedals', 'press'], ['max brake pressure', '1000 psi']] },
+      { id: 'm_unrelspd', label: 'Unreliable Speed', items: [['AP / FD', 'off'], ['A/THR', 'off'], ['pitch / thrust', '15° / TOGA']] },
+    ],
+  };
+
+  static LIMS = [
+    ['Max operating altitude', '39,100 ft'], ['VMO / MMO', '350 kt / M 0.82'], ['VFE conf FULL', '177 kt'], ['VLO extension', '250 kt'], ['Max crosswind (T/O & LDG)', '38 kt'], ['Max tailwind landing', '15 kt'], ['Fuel temperature', 'max +54 °C'], ['Max EGT (T/O & G/A, 5 min)', '950 °C'], ['Max EGT (MCT)', '915 °C'], ['Max N1', '104 %'], ['Max cabin diff pressure', '9.0 psi'], ['Max taxi weight', '73.9 t'],
+  ];
+
+  static SOPS = [
+    { title: 'Preliminary & Preflight', items: [
+      ['Cockpit Preparation', 'SOP 2.01'], ['Preliminary Cockpit Prep', 'SOP 2.02'], ['Exterior Walkaround', 'SOP 2.03'], ['FMS Programming', 'SOP 2.04'], ['Departure Briefing', 'SOP 2.05'],
+    ]},
+    { title: 'Ground & Departure', items: [
+      ['Before Start', 'SOP 3.01'], ['Engine Start', 'SOP 3.02'], ['After Start', 'SOP 3.03'], ['Taxi Procedure', 'SOP 3.04'], ['Before Takeoff', 'SOP 3.05'], ['Takeoff & Initial Climb', 'SOP 3.06'],
+    ]},
+    { title: 'Climb, Cruise & Descent', items: [
+      ['Climb Procedure', 'SOP 4.01'], ['Cruise Monitoring', 'SOP 4.02'], ['Fuel Management', 'SOP 4.03'], ['Descent Preparation', 'SOP 4.04'], ['Descent Procedure', 'SOP 4.05'], ['Approach Briefing', 'SOP 4.06'],
+    ]},
+    { title: 'Approach, Landing & After', items: [
+      ['Approach Procedure', 'SOP 5.01'], ['Stabilised Approach Criteria', 'SOP 5.02'], ['Landing', 'SOP 5.03'], ['Go-Around', 'SOP 5.04'], ['After Landing', 'SOP 5.05'], ['Parking', 'SOP 5.06'], ['Securing the Aircraft', 'SOP 5.07'],
+    ]},
+  ];
+
+  static QUIZ = [
+    { cat: 'Engines', q: 'Max EGT — takeoff & go-around (2 eng / 5 min)?', opts: ['950 °C', '925 °C', '750 °C', '725 °C'], correct: 0 },
+    { cat: 'Limitations', q: 'Complete the checklist item', cloze: 'signs', opts: ['off/remote', 'on/auto', 'off/top', 'left'], correct: 1 },
+    { cat: 'Speeds', q: 'VMO / MMO?', opts: ['350 kt / M 0.82', '330 kt / M 0.86', '340 kt / M 0.89', '320 kt / M 0.80'], correct: 0 },
+    { cat: 'General limitations', q: 'Maximum operating altitude?', opts: ['41,000 ft', '39,800 ft', '39,100 ft', '37,000 ft'], correct: 2 },
+    { cat: 'Memory items', q: 'Complete the memory item — Loss of Braking', cloze: 'brake pedals', opts: ['press', 'release', 'pump', 'off'], correct: 1 },
+  ];
+
+  static PROF_ORDER = { cat: 'Emergency', q: 'Order the Engine Fire checklist', order: ['THR lever (affected eng) — IDLE', 'ENG MASTER (affected) — OFF', 'ENG FIRE p/b — PUSH', 'AGENT 1 — DISCH'], scramble: [2, 0, 3, 1] };
+
+  quizList(title) {
+    return (title || '') === 'Proficiency Check' ? Component.QUIZ.concat([Component.PROF_ORDER]) : Component.QUIZ;
+  }
+
+  nav(screen, extra) { this.setState(Object.assign({ screen, searchOpen: false }, extra || {})); }
+  componentDidMount() {
+    this._onKey = (e) => { if (e.key === 'Escape' && this.state.searchOpen) this.setState({ searchOpen: false }); };
+    window.addEventListener('keydown', this._onKey);
+  }
+  componentWillUnmount() { if (this._onKey) window.removeEventListener('keydown', this._onKey); }
+  componentDidUpdate() {
+    if (this.state.screen !== 'checklist' && this.state.screen !== 'lchecklist') return;
+    const list = document.getElementById('clList');
+    if (!list) return;
+    if (this.state.scrollBottom) { this.setState({ scrollBottom: false }); list.scrollTo({ top: list.scrollHeight, behavior: 'smooth' }); return; }
+    const cur = list.querySelector('[data-cur="true"]');
+    if (!cur) return;
+    const lr = list.getBoundingClientRect(), cr = cur.getBoundingClientRect();
+    const bottomInset = 150;
+    const delta = (cr.top - lr.top) - ((list.clientHeight - bottomInset) / 2 - cur.offsetHeight / 2);
+    if (Math.abs(delta) > 2) list.scrollTo({ top: Math.max(0, list.scrollTop + delta), behavior: 'smooth' });
+  }  phases() { return Component.DATA[this.state.group]; }
+  phase() { return this.phases()[this.state.phaseIdx]; }
+  ckey(i) { return this.state.group + ':' + this.phase().id + ':' + i; }
+  checkedCount() { const n = this.phase().items.length; let c = 0; for (let i = 0; i < n; i++) if (this.state.checks[this.ckey(i)]) c++; return c; }
+
+  toggleItem(i) {
+    const k = this.ckey(i), checks = Object.assign({}, this.state.checks);
+    checks[k] = !checks[k];
+    const skips = Object.assign({}, this.state.skips || {}); if (checks[k]) delete skips[k];
+    this.setState({ checks, skips });
+  }
+  checkAt(i) {
+    const k = this.ckey(i), checks = Object.assign({}, this.state.checks); checks[k] = true;
+    const skips = Object.assign({}, this.state.skips || {}); delete skips[k];
+    this.setState({ checks, skips });
+  }
+  skipItem(i) {
+    const k = this.ckey(i), skips = Object.assign({}, this.state.skips || {}); skips[k] = true;
+    const checks = Object.assign({}, this.state.checks); delete checks[k];
+    this.setState({ checks, skips });
+  }
+  fmCheckNext() {
+    const items = this.phase().items;
+    for (let i = 0; i < items.length; i++) if (!this.state.checks[this.ckey(i)]) { this.toggleItem(i); return; }
+  }
+  fmUncheckLast() {
+    const items = this.phase().items;
+    for (let i = items.length - 1; i >= 0; i--) if (this.state.checks[this.ckey(i)]) { this.toggleItem(i); return; }
+  }
+  startQuiz(fromLims, title) { this.setState({ screen: 'quiz', quiz: { qIdx: 0, picked: null, score: 0, done: false, fromLims: !!fromLims, title: title || 'Quick Check' } }); }
+  pickAnswer(i) {
+    const q = this.state.quiz; if (!q || q.picked !== null) return;
+    const cur = this.quizList(q.title)[q.qIdx];
+    this.setState({ quiz: Object.assign({}, q, { picked: i, score: q.score + (i === cur.correct ? 1 : 0) }) });
+    setTimeout(() => {
+      const cq = this.state.quiz;
+      if (cq && cq.picked !== null && !cq.done) this.quizNext();
+    }, 1000);
+  }
+  pickOrder(orderIdx) {
+    const q = this.state.quiz; if (!q) return;
+    const seq = (q.seq || []).slice();
+    if (seq.indexOf(orderIdx) !== -1) return;
+    seq.push(orderIdx);
+    const cur = this.quizList(q.title)[q.qIdx];
+    const done = seq.length >= cur.order.length;
+    const correct = done && seq.every((v, i) => v === i);
+    this.setState({ quiz: Object.assign({}, q, { seq, picked: done ? 1 : null, score: q.score + (correct ? 1 : 0) - (q.orderScored ? (q.lastOrderCorrect ? 1 : 0) : 0), orderScored: done, lastOrderCorrect: correct }) });
+    if (done) setTimeout(() => {
+      const cq = this.state.quiz;
+      if (cq && cq.picked !== null && !cq.done) this.quizNext();
+    }, 1000);
+  }
+  quizNext() {
+    const q = this.state.quiz;
+    if (q.qIdx + 1 >= this.quizList(q.title).length) this.setState({ quiz: Object.assign({}, q, { done: true }) });
+    else this.setState({ quiz: Object.assign({}, q, { qIdx: q.qIdx + 1, picked: null, seq: [], orderScored: false, lastOrderCorrect: false }) });
+  }
+
+  renderVals() {
+    const s = this.state, D = Component.DATA;
+    const aircraft = s.aircraft || this.props.aircraft || 'A320';
+    const userName = this.props.userName || 'Jonas';
+    const sky = '#1466D6', dim = '#C2C9D1';
+    const dot = (on) => ({ dotBorder: on ? sky : dim, dotBg: on ? sky : 'transparent', dotShadow: on ? 'inset 0 0 0 3.5px #fff' : 'none' });
+    const border = (i, n) => i < n - 1 ? '1px solid #ECEFF3' : 'none';
+
+    const acData = [
+      { key: 'A320', name: 'A320-214', reg: 'D-AICA', type: 'Airbus · 180 seats', org: 'Flight School Mannheim', specs: { weight: '78,000 kg', speed: 'M 0.82 / 470 kn', length: '37.57 m', year: '1988' } },
+      { key: 'A320neo', name: 'A320neo', reg: 'D-ABKL', type: 'Airbus · 186 seats', org: 'Condor', specs: { weight: '79,000 kg', speed: 'M 0.82 / 470 kn', length: '37.57 m', year: '2014' } },
+      { key: 'A321neo', name: 'A321neo', reg: 'D-ABKL', type: 'Airbus · 220 seats', org: 'Condor', specs: { weight: '97,000 kg', speed: 'M 0.82 / 470 kn', length: '44.51 m', year: '2015' } },
+      { key: 'DA40', name: 'DA40 NG', reg: 'D-EMIA', type: 'Diamond · trainer', org: 'Flight School Mannheim', specs: { weight: '1,280 kg', speed: '150 kn', length: '8.06 m', year: '2010' } },
+    ];
+    const acSpec = (acData.find(x => x.key === aircraft) || acData[0]).specs;
+    const specRows = [
+      ['Max weight (MTOW)', acSpec.weight],
+      ['Max speed', acSpec.speed],
+      ['Length', acSpec.length],
+      ['Building year', acSpec.year],
+    ].map(([label, value], i, arr) => ({ label, value, rowBorder: i < arr.length - 1 ? '1px solid #ECEFF3' : 'none' }));
+    const acOptions = acData.map((a, i) => {
+      const on = aircraft === a.key;
+      return {
+        name: a.name, reg: a.reg, type: a.type, rowBorder: border(i, acData.length),
+        bg: on ? 'linear-gradient(90deg, rgba(20,102,214,0.07), rgba(20,102,214,0))' : 'transparent',
+        dotBorder: on ? sky : dim, dotBg: on ? sky : 'transparent', markOp: on ? '1' : '0',
+        onPick: () => this.setState({ aircraft: a.key, screen: s.prevScreen || 'home' }),
+      };
+    });
+
+    const chkTab = s.phasesOrigin === 'learn' ? 'learn' : 'flight';
+    const tab = s.screen === 'home' ? 'home' : ['phases', 'checklist', 'lchecklist', 'fm'].includes(s.screen) ? chkTab : s.screen === 'sops' ? 'flight' : s.screen === 'lims' ? (s.limsOrigin === 'learn' ? 'learn' : 'flight') : s.screen === 'llims' ? 'learn' : ['flight', 'config', 'limsView'].includes(s.screen) ? 'flight' : ['learn', 'quiz', 'typeRating', 'topic', 'memPhases'].includes(s.screen) ? 'learn' : s.screen === 'lsops' ? 'learn' : s.screen === 'search' ? 'search' : 'profile';
+    const tcol = (t) => tab === t ? sky : '#5A6672';
+    const twt = (t) => tab === t ? '700' : '500';
+    const tbg = (t) => tab === t ? 'rgba(20,102,214,0.12)' : 'transparent';
+
+    const hangarData = [['A320-214', 'D-AICA'], ['A320neo', 'D-AINB'], ['DA40 NG', 'D-EMIA']];
+    const hangar = hangarData.map(([name, sub], i) => {
+      const on = (aircraft === 'A320' && i === 0) || (aircraft === 'A320neo' && i === 1) || (aircraft === 'DA40' && i === 2);
+      return Object.assign({
+        name, sub, rowBorder: border(i, 3), tagDisplay: on ? 'flex' : 'none',
+        onPick: () => this.setState({ aircraft: i === 1 ? 'A320neo' : i === 2 ? 'DA40' : 'A320' }),
+      }, dot(on));
+    });
+
+    const LEAD = [
+      [['01', 'Peter Schmidt', 'Mannheim'], ['02', 'Nick Stübe', 'Berlin'], ['03', 'Hans Peter', 'München'], ['573', 'You', 'Mannheim']],
+      [['01', 'Nick Stübe', 'Berlin'], ['02', 'Peter Schmidt', 'Mannheim'], ['03', 'Lena Wolf', 'Hamburg'], ['214', 'You', 'Mannheim']],
+      [['01', 'Peter Schmidt', 'Mannheim'], ['02', 'Ralf Berger', 'Heidelberg'], ['03', 'You', 'Mannheim'], ['04', 'Dietmar Kranz', 'Speyer']],
+    ];
+    const LB = [
+      [['01', 'Peter Schmidt', 'Mannheim', 4820], ['02', 'Nick Stübe', 'Berlin', 4610], ['03', 'Hans Peter', 'München', 4390], ['04', 'Lena Wolf', 'Hamburg', 4120], ['05', 'Ralf Berger', 'Heidelberg', 3980], ['06', 'Dietmar Kranz', 'Speyer', 3740], ['573', 'You', 'Mannheim', 2210]],
+      [['01', 'Nick Stübe', 'Berlin', 4610], ['02', 'Peter Schmidt', 'Mannheim', 4820], ['03', 'Lena Wolf', 'Hamburg', 4120], ['04', 'Hans Peter', 'München', 4390], ['05', 'Ralf Berger', 'Heidelberg', 3980], ['214', 'You', 'Mannheim', 2210]],
+      [['01', 'Peter Schmidt', 'Mannheim', 4820], ['02', 'Ralf Berger', 'Heidelberg', 3980], ['03', 'You', 'Mannheim', 2210], ['04', 'Dietmar Kranz', 'Speyer', 1980], ['05', 'Jan Vogel', 'Weinheim', 1720]],
+    ];
+    const rankColors = ['#E7A614', '#8A97A4', '#C08457'];
+    const leadFilters = ['International', 'Germany', 'Region'].map((label, i) => ({
+      label,
+      bg: s.leadTab === i ? '#131A21' : '#fff',
+      color: s.leadTab === i ? '#fff' : '#5A6672',
+      border: s.leadTab === i ? '#131A21' : '#DDE2E8',
+      onPick: () => this.setState({ leadTab: i }),
+    }));
+    const leadRows = LEAD[s.leadTab].map(([rank, name, city], i, arr) => {
+      const you = name === 'You';
+      return {
+        rank, name, city, rowBorder: border(i, arr.length),
+        rankColor: you ? sky : (rankColors[i] || '#5A6672'),
+        whoColor: you ? sky : '#1B242C',
+        bg: you ? 'linear-gradient(90deg, rgba(20,102,214,0.07), rgba(20,102,214,0))' : 'transparent',
+      };
+    });
+
+    const phasesArr = this.phases();
+    const phaseDone = (p) => { let c = 0; for (let i = 0; i < p.items.length; i++) if (s.checks[s.group + ':' + p.id + ':' + i]) c++; return c; };
+    const phaseStat = (p) => {
+      const total = p.items.length; let ch = 0, sk = 0;
+      for (let i = 0; i < total; i++) { const k = s.group + ':' + p.id + ':' + i; if (s.checks[k]) ch++; else if ((s.skips || {})[k]) sk++; }
+      const res = ch + sk;
+      const key = res === 0 ? 'none' : (res >= total ? (sk === 0 ? 'green' : 'yellow') : 'red');
+      return { ch, sk, res, total, key };
+    };
+    const phases = phasesArr.map((p, i) => {
+      const st = phaseStat(p);
+      const col = st.key === 'green' ? '#17A673' : st.key === 'yellow' ? '#E5A400' : st.key === 'red' ? '#E5484D' : 'transparent';
+      return {
+        label: p.label, count: st.res + '/' + st.total, progPct: Math.round(st.res / st.total * 100) + '%',
+        progColor: col, onOpen: () => this.nav(s.phasesOrigin === 'learn' ? 'lchecklist' : 'checklist', { phaseIdx: i }),
+      };
+    });
+
+    const ph = this.phase();
+    const skips = s.skips || {};
+    let curIdx = -1;
+    for (let i = 0; i < ph.items.length; i++) { const k = this.ckey(i); if (!s.checks[k] && !skips[k]) { curIdx = i; break; } }
+    const clItems = ph.items.map(([label, resp], i) => {
+      const k = this.ckey(i);
+      const checked = !!s.checks[k], skipped = !!skips[k], isCur = i === curIdx;
+      let cardBg = '#fff', cardBorderCss = '1px solid #DDE2E8', cardShadow = '0 1px 2px rgba(19,26,33,0.03)', boxBorder = '#C2C9D1', boxBg = 'transparent', respColor = '#9AA4AF', op = '0.6';
+      if (checked) { boxBg = '#1466D6'; boxBorder = '#1466D6'; respColor = '#17A673'; op = '1'; }
+      else if (skipped) { cardBorderCss = '1px solid #F0DFB0'; boxBorder = '#E5A400'; respColor = '#C8892B'; op = '1'; }
+      else if (isCur) { cardBg = '#F4F8FC'; cardBorderCss = '1.5px solid #1466D6'; cardShadow = '0 8px 20px -14px rgba(20,102,214,0.6)'; boxBorder = '#1466D6'; respColor = '#1466D6'; op = '1'; }
+      return { label, resp: skipped ? 'SKIPPED' : (resp || '').toUpperCase(), onToggle: () => this.toggleItem(i), checked, skipped, cur: isCur, cardBg, cardBorderCss, cardShadow, boxBg, boxBorder, respColor, op, revealed: !s.studyCl || i < s.revealCl, hidden: s.studyCl && i >= s.revealCl, leftShown: !s.studyCl || s.revealCl > i * 2, leftHidden: s.studyCl && s.revealCl <= i * 2, rightShown: !s.studyCl || s.revealCl > i * 2 + 1, rightHidden: s.studyCl && s.revealCl <= i * 2 + 1 };
+    });
+    const clDoneCount = this.checkedCount();
+    let clSkipCount = 0; for (let i = 0; i < ph.items.length; i++) if (skips[this.ckey(i)]) clSkipCount++;
+    const clComplete = curIdx === -1;
+    const lastPhaseCl = s.phaseIdx >= phasesArr.length - 1;
+    const chipPhases = phasesArr.map((p, i) => {
+      const cur = i === s.phaseIdx, st = phaseStat(p);
+      let bg = '#fff', bd = '#DDE2E8', cl = '#5A6672', lab = p.label;
+      if (cur) { bg = '#1466D6'; bd = '#1466D6'; cl = '#fff'; }
+      else if (st.key === 'green') { bg = '#E4F1EA'; bd = '#B4D6C1'; cl = '#0F7A50'; }
+      else if (st.key === 'yellow') { bg = '#FBF1DA'; bd = '#EAD79B'; cl = '#B4820F'; }
+      else if (st.key === 'red') { bg = '#FCE9E9'; bd = '#F3C3C3'; cl = '#C7382F'; }
+      return { chipLabel: lab, onOpen: () => this.nav(s.phasesOrigin === 'learn' ? 'lchecklist' : 'checklist', { phaseIdx: i }), chipBg: bg, chipBorder: bd, chipColor: cl, chipWeight: cur ? '700' : '600' };
+    });
+
+    let fmCurIdx = -1;
+    for (let i = 0; i < ph.items.length; i++) if (!s.checks[this.ckey(i)]) { fmCurIdx = i; break; }
+    const fmDone = [], fmUpcoming = [];
+    ph.items.forEach(([label, resp], i) => {
+      if (s.checks[this.ckey(i)]) fmDone.push({ label, resp });
+      else if (i !== fmCurIdx) fmUpcoming.push({ label, resp });
+    });
+    fmDone.forEach((d, i) => d.rowBorder = border(i, fmDone.length));
+    const fmCur = fmCurIdx >= 0 ? ph.items[fmCurIdx] : null;
+    const fmLimit = fmCur && fmCur[2];
+    const lastPhase = s.phaseIdx >= phasesArr.length - 1;
+
+    const quiz = s.quiz || { qIdx: 0, picked: null, score: 0, done: false };
+    const qList = this.quizList(quiz.title);
+    const qq = qList[quiz.qIdx] || qList[0];
+    const isProf = (quiz.title || '') === 'Proficiency Check';
+    const isOrder = !!qq.order;
+    const qSeq = quiz.seq || [];
+    const qOrderSlots = isOrder ? qq.order.map((_, n) => {
+      const orderIdx = qSeq[n];
+      return { num: n + 1, filled: orderIdx !== undefined, label: orderIdx !== undefined ? qq.order[orderIdx] : '' };
+    }) : [];
+    const qPool = isOrder ? qq.scramble.map((orderIdx, i) => {
+      const used = qSeq.indexOf(orderIdx) !== -1;
+      return {
+        label: qq.order[orderIdx], rowBorder: border(i, qq.scramble.length),
+        op: used ? '0.3' : '1', bg: 'transparent',
+        color: 'inherit', hoverBg: used ? 'transparent' : '#F0F5FC',
+        onPick: () => { if (!used) this.pickOrder(orderIdx); },
+      };
+    }) : [];
+    const qOpts = (qq.opts || []).map((label, i) => {
+      const picked = quiz.picked !== null;
+      const isCorrect = i === qq.correct, isPicked = i === quiz.picked;
+      if (isProf) {
+        // Proficiency check: record the input only, never reveal the correct answer.
+        return {
+          key: 'ABCD'[i], label, rowBorder: border(i, 4),
+          bg: picked && isPicked ? '#EEF1F4' : 'transparent',
+          color: 'inherit', op: '1',
+          hoverBg: picked ? 'transparent' : '#F0F5FC',
+          onPick: () => this.pickAnswer(i),
+        };
+      }
+      return {
+        key: 'ABCD'[i], label, rowBorder: border(i, 4),
+        bg: picked && isCorrect ? sky : picked && isPicked ? '#EEF1F4' : 'transparent',
+        color: picked && isCorrect ? '#fff' : 'inherit',
+        op: picked && !isCorrect && !isPicked ? '0.45' : '1',
+        hoverBg: picked ? (isCorrect ? sky : 'transparent') : '#F0F5FC',
+        onPick: () => this.pickAnswer(i),
+      };
+    });
+
+    const limReadCount = Object.keys(s.limRead).filter(k => s.limRead[k]).length;
+    const lims = Component.LIMS.map(([label, value], i) => ({
+      label, value, dotBorder: s.limRead[i] ? sky : dim, markOp: s.limRead[i] ? '1' : '0',
+      onRead: () => { const limRead = Object.assign({}, s.limRead); limRead[i] = !limRead[i]; this.setState({ limRead }); },
+    }));
+
+    const limReadLearnCount = Object.keys(s.limReadLearn || {}).filter(k => s.limReadLearn[k]).length;
+    const limsLearn = Component.LIMS.map(([label, value], i) => ({
+      label, value, dotBorder: (s.limReadLearn || {})[i] ? sky : dim, markOp: (s.limReadLearn || {})[i] ? '1' : '0',
+      onRead: () => { const limReadLearn = Object.assign({}, s.limReadLearn); limReadLearn[i] = !limReadLearn[i]; this.setState({ limReadLearn }); },
+      revealed: !s.studyLim || i < s.revealLim, hidden: s.studyLim && i >= s.revealLim,
+      leftShown: !s.studyLim || s.revealLim > i * 2, leftHidden: s.studyLim && s.revealLim <= i * 2, rightShown: !s.studyLim || s.revealLim > i * 2 + 1, rightHidden: s.studyLim && s.revealLim <= i * 2 + 1,
+    }));
+
+    const TOPICS = {
+      'System': { pct: '70%', sections: [
+        { kicker: 'Hydraulics', title: 'Three independent systems', body: 'Green, Blue and Yellow systems each operate at 3000 psi. Green and Yellow are engine-driven; Blue is driven by an electric pump, with the RAT as backup. A PTU transfers power between Green and Yellow without fluid exchange.', facts: [['Nominal pressure', '3000 psi'], ['Reservoirs', 'Green / Blue / Yellow'], ['Backup', 'RAT + PTU']] },
+        { kicker: 'Electrical', title: 'AC & DC network', body: 'Two engine generators feed the AC busses, backed by the APU generator, external power and the emergency generator on the RAT. The batteries cover essential DC loads in an emergency configuration.', facts: [['Gen output', '90 kVA · 115 V'], ['Frequency', '400 Hz'], ['Batteries', '2 × 24 V']] },
+        { kicker: 'Bleed & Air', title: 'Pneumatic supply', body: 'Engine bleed air feeds the packs, wing anti-ice and pressurisation. A dual bleed loss requires descent to FL100 while cabin pressure is monitored.' },
+      ]},
+      'Airspace': { pct: '12%', sections: [
+        { kicker: 'Classification', title: 'Classes A to G', body: 'Controlled airspace runs A through E; F and G are uncontrolled. IFR clearance and separation requirements tighten toward Class A. VFR is prohibited in Class A.', facts: [['Class A', 'IFR only'], ['Class C', 'IFR + VFR, separated'], ['Class G', 'Uncontrolled']] },
+        { kicker: 'Levels', title: 'Transition altitude', body: 'Below the transition altitude altimeters are set to QNH; above the transition level they are set to 1013 hPa standard. The layer between is the transition zone.', facts: [['Below', 'QNH'], ['Above', '1013 hPa STD']] },
+        { kicker: 'Speed', title: 'Speed limits', body: 'A maximum of 250 kt IAS applies below FL100 unless otherwise authorised. Additional limits apply within specific control zones.' },
+      ]},
+      'First Aid': { pct: '95%', sections: [
+        { kicker: 'Physiology', title: 'Hypoxia', body: 'Reduced oxygen at altitude degrades judgement and vision, often without the crew noticing. Time of useful consciousness falls sharply above FL350 — don masks immediately on any depressurisation.', facts: [['TUC @ FL350', '30–60 s'], ['First action', 'Oxygen masks on']] },
+        { kicker: 'Crew', title: 'Pilot incapacitation', body: 'On suspected incapacitation, take control, declare, and secure the affected pilot. Subtle incapacitation is the greater hazard — cross-check unexpected inaction.' },
+        { kicker: 'Cabin', title: 'Onboard emergencies', body: 'Cabin crew manage medical events using onboard kits; the flight crew decides on diversion based on severity and available medical support.' },
+      ]},
+    };
+    const topicKey = s.topicKey || 'System';
+    const topicDef = TOPICS[topicKey] || TOPICS['System'];
+    const topicSections = topicDef.sections.map((sec) => ({
+      kicker: sec.kicker, title: sec.title, body: sec.body,
+      hasFacts: !!sec.facts, facts: (sec.facts || []).map(([k, v]) => ({ k, v })),
+    }));
+
+    const knowledge = [
+      ['Memory Items', '55%', () => this.nav('memPhases', { group: 'memory', phasesOrigin: 'learn' })], ['Limitations', '18%', () => this.nav('llims')],
+      ['SOPs', '32%', () => this.nav('lsops')],
+      ['System', TOPICS['System'].pct, () => this.nav('topic', { topicKey: 'System' })],
+      ['Airspace', TOPICS['Airspace'].pct, () => this.nav('topic', { topicKey: 'Airspace' })],
+      ['First Aid', TOPICS['First Aid'].pct, () => this.nav('topic', { topicKey: 'First Aid' })],
+    ].map(([label, pct, fn]) => ({ label, pct, onOpen: fn || (() => {}) }));
+
+    const tests = [
+      { label: 'Quick Check', score: '60', onOpen: () => this.startQuiz(false, 'Quick Check') },
+      { label: 'Proficiency Check', score: '45', onOpen: () => this.startQuiz(false, 'Proficiency Check') },
+      { label: 'Type Rating', score: '75', onOpen: () => this.nav('typeRating') },
+    ];
+
+    const checkHistory = [
+      { label: 'Quick Check', score: '4/5', date: 'Today', good: true, onOpen: () => this.startQuiz(false, 'Quick Check') },
+      { label: 'Proficiency', score: '2/5', date: 'Yesterday', good: false, onOpen: () => this.startQuiz(false, 'Proficiency Check') },
+      { label: 'Quick Check', score: '5/5', date: 'Mon', good: true, onOpen: () => this.startQuiz(false, 'Quick Check') },
+      { label: 'Memory Items', score: '3/5', date: 'Sun', good: false, onOpen: () => this.startQuiz(false, 'Quick Check') },
+    ].map((h) => ({ ...h, scoreColor: h.good ? '#37A56A' : '#E5A400' }));
+    const mistakes = [
+      { topic: 'Loss of Braking', sub: 'brake pedals — release', onOpen: () => this.startQuiz(false, 'Quick Check') },
+      { topic: 'VMO / MMO', sub: '350 kt / M 0.82', onOpen: () => this.startQuiz(false, 'Quick Check') },
+      { topic: 'Max EGT (T/O)', sub: '950 °C', onOpen: () => this.startQuiz(false, 'Quick Check') },
+      { topic: 'Signs', sub: 'on / auto', onOpen: () => this.startQuiz(false, 'Quick Check') },
+    ];
+
+    const radarAxes = [
+      { label: 'Memory Items', pct: this.props.rMemoryItems ?? 55 },
+      { label: 'Limitation', pct: this.props.rLimitation ?? 18 },
+      { label: 'System', pct: this.props.rSystem ?? 70 },
+      { label: 'Airspace', pct: this.props.rAirspace ?? 12 },
+      { label: 'Speed', pct: this.props.rSpeed ?? 40 },
+      { label: 'First Aid', pct: this.props.rFirstAid ?? 95 },
+    ];
+    const RCX = 160, RCY = 128, RR = 96;
+    const rAng = (i) => (-90 + i * (360 / radarAxes.length)) * Math.PI / 180;
+    const rPt = (i, frac) => [RCX + RR * frac * Math.cos(rAng(i)), RCY + RR * frac * Math.sin(rAng(i))];
+    const radar = {
+      cx: RCX, cy: RCY,
+      rings: [0.25, 0.5, 0.75, 1].map((lv) => radarAxes.map((_, i) => rPt(i, lv).map(n => n.toFixed(1)).join(',')).join(' ')),
+      spokes: radarAxes.map((_, i) => { const [x, y] = rPt(i, 1); return { x2: x.toFixed(1), y2: y.toFixed(1) }; }),
+      poly: radarAxes.map((a, i) => rPt(i, a.pct / 100).map(n => n.toFixed(1)).join(',')).join(' '),
+      dots: radarAxes.map((a, i) => { const [x, y] = rPt(i, a.pct / 100); return { cx: x.toFixed(1), cy: y.toFixed(1) }; }),
+      labels: radarAxes.map((a, i) => {
+        const [x, y] = rPt(i, 1.2);
+        const anchor = (i === 0 || i === 3) ? 'middle' : (i === 1 || i === 2 ? 'start' : 'end');
+        const tx = anchor === 'middle' ? '-50%' : anchor === 'start' ? '0' : '-100%';
+        return {
+          left: (x / 320 * 100).toFixed(2) + '%',
+          top: (y / 280 * 100).toFixed(2) + '%',
+          transform: 'translate(' + tx + ',-50%)',
+          textAlign: anchor === 'start' ? 'left' : anchor === 'end' ? 'right' : 'center',
+          label: a.label, pct: a.pct + '%',
+        };
+      }),
+    };
+
+    return {
+      radar,
+      checkHistory, mistakes,
+      streakTop: (this.props.streakPlacement ?? 'Below radar') === 'Below header',
+      streakBelowRadar: (this.props.streakPlacement ?? 'Below radar') === 'Below radar',
+      streakBottom: (this.props.streakPlacement ?? 'Below radar') === 'Bottom',
+      aircraft, userName, userInitial: userName[0] || 'J',
+      fitnessPct: (this.props.proficiency ?? 87) + '%',
+      fitnessColor: (() => { const n = this.props.proficiency ?? 87; return n < 50 ? '#E5484D' : n < 80 ? '#E5A400' : '#37A56A'; })(),
+      acSub: (() => { const a = acData.find(x => x.key === aircraft) || acData[0]; return a.org + ' | ' + a.reg; })(),
+      noop: (e) => { if (e && e.preventDefault) e.preventDefault(); },
+      streakWeeks: [0.32,0.4,0.36,0.44,0.4,0.5,0.06,0.5,0.44,0.52,0.46,0.54,0.5,0.44,0.5,0.06,0.06,0.62,0.58,0.64,0.7,0.66,0.74,0.82,0.9,1]
+        .map((l) => ({ bg: l <= 0.1 ? '#EAF0FA' : '#1466D6', bgDark: l <= 0.1 ? 'rgba(255,255,255,0.14)' : '#4C93EF' })),
+      specRows,
+      isHome: s.screen === 'home', isFlight: s.screen === 'flight', isPhases: s.screen === 'phases',
+      isChecklist: s.screen === 'checklist', isLearnChecklist: s.screen === 'lchecklist', isFM: s.screen === 'fm', isLearn: s.screen === 'learn',
+      isMemPhases: s.screen === 'memPhases',
+      isQuiz: s.screen === 'quiz', isLims: s.screen === 'lims', isLearnLims: s.screen === 'llims', isProfile: s.screen === 'profile',
+      isConfig: s.screen === 'config',
+      openConfig: () => this.nav('config'),
+      configGroups: [
+        { title: 'General', rows: [['Manufacturer', 'Airbus'], ['Type', 'A320-214'], ['Registration', 'D-AICA'], ['Cabin config', 'Y180']] },
+        { title: 'Engines', rows: [['Powerplant', '2 × CFM56-5B4'], ['Thrust (each)', '27,000 lbf'], ['Max N1', '104 %']] },
+        { title: 'Weights', rows: [['Max taxi', '73.9 t'], ['Max takeoff', '73.5 t'], ['Max landing', '64.5 t'], ['Max zero fuel', '61.0 t']] },
+        { title: 'Dimensions', rows: [['Wingspan', '35.80 m'], ['Length', '37.57 m'], ['Height', '11.76 m'], ['Fuel capacity', '24,210 L']] },
+      ].map((g) => ({ title: g.title, rows: g.rows.map(([k, v], i) => ({ k, v, rowBorder: border(i, g.rows.length) })) })),
+      isLimsView: s.screen === 'limsView',
+      openLimsView: () => this.nav('limsView'),
+      limsPlain: Component.LIMS.map(([label, value], i) => ({ label, value, rowBorder: border(i, Component.LIMS.length) })),
+      isTopic: s.screen === 'topic',
+      topicTitle: topicKey, topicPct: topicDef.pct, topicSections,
+      topicTrain: () => this.startQuiz(false, topicKey),
+      isTypeRating: s.screen === 'typeRating',
+      trGroups: (() => {
+        const mk = (prefix, count, pcts) => Array.from({ length: count }, (_, i) => {
+          const pct = pcts[i] || 0, on = pct >= 100;
+          return Object.assign({
+            label: prefix + ' ' + (i + 1), pct: pct + '%',
+            onOpen: () => this.startQuiz(false, prefix + ' ' + (i + 1)),
+          }, dot(on));
+        });
+        const finish = (items) => items.map((it, i) => Object.assign(it, { rowBorder: border(i, items.length) }));
+        return [
+          { title: 'A320 · MFTD', items: finish(mk('TR A320 MFTD', 9, [100, 100, 60, 20, 0, 0, 0, 0, 0])) },
+          { title: 'A320 · FFS', items: finish(mk('TR A320 FFS', 5, [40, 0, 0, 0, 0])) },
+        ];
+      })(),
+      isLeaderboard: s.screen === 'leaderboard',
+      openLeaderboard: (e) => { e && e.preventDefault && e.preventDefault(); this.setState({ prevScreen: s.screen, screen: 'leaderboard' }); },
+      closeLeaderboard: () => this.nav(s.prevScreen || 'home'),
+      lbFilters: ['International', 'Germany', 'Region'].map((label, i) => ({
+        label, bg: s.leadTab === i ? '#131A21' : '#fff', color: s.leadTab === i ? '#fff' : '#5A6672',
+        border: s.leadTab === i ? '#131A21' : '#DDE2E8', onPick: () => this.setState({ leadTab: i }),
+      })),
+      lbPodium: (() => {
+        const full = LB[s.leadTab];
+        const order = [1, 0, 2];
+        const sizes = ['52px', '62px', '52px'], bars = ['64px', '86px', '48px'];
+        return order.map((oi, pos) => {
+          const [rank, name, , pts] = full[oi];
+          return {
+            rank, name, pts: pts + ' pts', initial: name === 'You' ? 'Y' : name[0], size: sizes[pos], barH: bars[pos],
+            ring: oi === 0 ? '#E7A614' : oi === 1 ? '#8A97A4' : '#C08457',
+            barBg: oi === 0 ? '#131A21' : '#EEF1F4', rankColor: oi === 0 ? '#fff' : '#5A6672',
+          };
+        });
+      })(),
+      lbRows: LB[s.leadTab].map(([rank, name, city, pts], i, arr) => {
+        const you = name === 'You';
+        return {
+          rank, name, city, pts, initial: you ? 'Y' : name[0], rowBorder: border(i, arr.length),
+          rankColor: you ? sky : (['#E7A614', '#8A97A4', '#C08457'][i] || '#5A6672'),
+          whoColor: you ? sky : '#1B242C',
+          bg: you ? 'linear-gradient(90deg, rgba(20,102,214,0.07), rgba(20,102,214,0))' : 'transparent',
+        };
+      }),
+      isLogbook: s.screen === 'logbook',
+      openLogbook: (e) => { e && e.preventDefault && e.preventDefault(); this.setState({ prevScreen: s.screen, screen: 'logbook' }); },
+      closeLogbook: () => this.nav(s.prevScreen || 'home'),
+      logStats: [['128', 'flights'], ['312:45', 'block hrs'], ['96', 'PIC hrs']].map(([value, label], i, arr) => ({ value, label, rowBorder: i < arr.length - 1 ? '1px solid rgba(255,255,255,0.12)' : 'none' })),
+      logMonths: [
+        { month: 'July 2026', flights: [
+          ['12', '08:15', 'BER', 'ARN', 'A320-214', 'PIC', '1:35'],
+          ['02', '14:40', 'CUN', 'JFK', 'A320neo', 'FO', '4:05'],
+        ]},
+        { month: 'June 2026', flights: [
+          ['28', '06:50', 'FRA', 'PMI', 'A320-214', 'FO', '2:20'],
+          ['21', '17:10', 'PMI', 'FRA', 'A320-214', 'PIC', '2:15'],
+          ['09', '09:30', 'MHG', 'MHG', 'DA40 NG', 'PIC', '0:55'],
+        ]},
+      ].map((mo) => ({
+        month: mo.month,
+        flights: mo.flights.map(([day, time, from, to, aircraft, role, dur], i, arr) => ({
+          day, time, from, to, aircraft, role, dur, rowBorder: i < arr.length - 1 ? '1px solid #ECEFF3' : 'none',
+        })),
+      })),
+      isOrgs: s.screen === 'orgs',
+      openOrgs: (e) => { e && e.preventDefault && e.preventDefault(); this.setState({ prevScreen: s.screen, screen: 'orgs' }); },
+      closeOrgs: () => this.nav(s.prevScreen || 'home'),
+      orgs: [
+        { name: 'Flight School Mannheim', kind: 'ATO', role: 'Member', iconBg: '#EFF3F7', iconColor: '#1466D6', iconPath: 'M3 21h18M5 21V8l7-4 7 4v13M9 21v-5h6v5', stats: [['3', 'aircraft'], ['48', 'members'], ['#3', 'your rank']] },
+        { name: 'Condor', kind: 'Airline', role: 'Crew', iconBg: '#EEF0F3', iconColor: '#131A21', iconPath: 'M2 12l20-6-6 20-4-8-8-4-2-2z', stats: [['12', 'aircraft'], ['210', 'members'], ['#214', 'your rank']] },
+      ].map((o) => ({
+        name: o.name, kind: o.kind, role: o.role, iconBg: o.iconBg, iconColor: o.iconColor, iconPath: o.iconPath,
+        stats: o.stats.map(([value, label], i) => ({ value, label, rowBorder: i < o.stats.length - 1 ? '1px solid #ECEFF3' : 'none' })),
+      })),
+      isHangars: s.screen === 'hangars',
+      openHangars: (e) => { e && e.preventDefault && e.preventDefault(); this.setState({ prevScreen: s.screen, screen: 'hangars' }); },
+      closeHangars: () => this.nav(s.prevScreen || 'home'),
+      hangars: [
+        { name: 'Hangar 1 · Mannheim', org: 'Flight School Mannheim · ATO', craft: [['A320-214', 'D-AICA'], ['DA40 NG', 'D-EMIA']] },
+        { name: 'Hangar 3 · Frankfurt', org: 'Condor · Airline', craft: [['A320neo', 'D-AINB'], ['A321', 'D-AICF']] },
+        { name: 'Hangar 7 · Berlin', org: 'Condor · Airline', craft: [['A320-214', 'D-AICB']] },
+      ].map((h) => ({
+        name: h.name, org: h.org, count: h.craft.length + ' aircraft',
+        craft: h.craft.map(([name, reg], i) => ({ name, reg, rowBorder: border(i, h.craft.length) })),
+      })),
+      isStats: s.screen === 'stats',
+      openStats: () => this.setState({ prevScreen: s.screen, screen: 'stats' }),
+      closeStats: () => this.nav(s.prevScreen || 'home'),
+      statCards: [
+        { value: '231', label: 'items mastered' }, { value: '14', label: 'day streak' },
+        { value: '739', label: 'limitations' }, { value: '#3', label: 'region rank' },
+      ],
+      achievements: [
+        { title: 'Perfect Streak', desc: '14 days in a row', tag: 'Earned', earned: true },
+        { title: 'Limitations Master', desc: 'All limitations read', tag: 'Earned', earned: true },
+        { title: 'Quick Check Ace', desc: 'Score 5/5 on a Quick Check', tag: 'Earned', earned: true },
+        { title: 'Type Rating Ready', desc: 'Reach 90% fitness', tag: '87%', earned: false },
+      ].map((a, i, arr) => ({
+        title: a.title, desc: a.desc, tag: a.tag, rowBorder: border(i, arr.length),
+        op: a.earned ? '1' : '0.5',
+        iconBg: a.earned ? '#EFF3F7' : '#EEF0F3', iconColor: a.earned ? sky : '#8A97A4',
+        tagColor: a.earned ? '#17A673' : '#5A6672',
+      })),
+      homeBadges: [
+        { title: 'Perfect Streak', earned: true }, { title: 'Limitations Master', earned: true },
+        { title: 'Quick Check Ace', earned: true }, { title: 'Type Rating Ready', earned: false },
+      ].map((a) => ({
+        title: a.title, op: a.earned ? '1' : '0.4',
+        iconBg: a.earned ? '#EFF3F7' : '#EEF0F3', iconColor: a.earned ? sky : '#8A97A4',
+      })),
+      badgesEarned: 3,
+      flipHome: () => this.setState((st) => ({ homeFlip: !st.homeFlip })),
+      homeFlipTransform: s.homeFlip ? 'rotateY(180deg) translateZ(1px)' : 'rotateY(0deg) translateZ(1px)',
+      frontPE: s.homeFlip ? 'none' : 'auto',
+      backPE: s.homeFlip ? 'auto' : 'none',
+      openStatsHero: (e) => { e && e.preventDefault && e.preventDefault(); e && e.stopPropagation && e.stopPropagation(); this.setState({ prevScreen: s.screen, screen: 'stats' }); },
+      goProfileStop: (e) => { e && e.preventDefault && e.preventDefault(); e && e.stopPropagation && e.stopPropagation(); this.setState({ prevScreen: s.screen, screen: 'profile' }); },
+      closeProfile: () => this.nav('home'),
+      isAircraftSelect: s.screen === 'aircraftSelect', acOptions,
+      openAircraft: () => this.setState({ prevScreen: s.screen, screen: 'aircraftSelect' }),
+      closeAircraft: () => this.nav(s.prevScreen || 'home'),
+      goHome: () => this.nav('home'), goFlight: () => this.nav('flight'), goLearn: () => this.nav('learn'),
+      goProfile: () => this.setState({ prevScreen: s.screen, screen: 'profile' }),
+      goSearch: () => this.setState({ searchOpen: true, searchQuery: '' }),
+      closeSearch: () => this.setState({ searchOpen: false }),
+      stopEvt: (e) => { e && e.stopPropagation && e.stopPropagation(); },
+      tHome: tcol('home'), tFlight: tcol('flight'), tLearn: tcol('learn'),
+      wHome: twt('home'), wFlight: twt('flight'), wLearn: twt('learn'),
+      bHome: tbg('home'), bFlight: tbg('flight'), bLearn: tbg('learn'),
+      tSearch: s.searchOpen ? '#fff' : '#5A6672',
+      wSearch: s.searchOpen ? '700' : '500',
+      bSearchBtn: s.searchOpen ? 'rgba(20,102,214,0.92)' : 'rgba(255,255,255,0.62)',
+      searchOpen: !!s.searchOpen,
+      searchQuery: s.searchQuery || '',
+      searchHasQuery: !!(s.searchQuery || '').trim(),
+      onSearch: (e) => this.setState({ searchQuery: e.target.value }),
+      clearSearch: () => this.setState({ searchQuery: '' }),
+      ...(() => {
+        const sq = (s.searchQuery || '').trim().toLowerCase();
+        const iconFor = (k) => k === 'checklist' ? 'M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01'
+          : k === 'item' ? 'M20 6 9 17l-5-5'
+          : k === 'lim' ? 'M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4M12 17h.01'
+          : k === 'topic' ? 'M4 5a2 2 0 012-2h11v16H6a2 2 0 00-2 2z'
+          : 'M12 2a10 10 0 100 20 10 10 0 000-20zM9 12l2 2 4-4';
+        const go = (r) => {
+          if (r.kind === 'lim') return this.nav('lims');
+          if (r.kind === 'topic') return r.topicKey === 'Memory Items' ? this.nav('memPhases', { group: 'memory', phasesOrigin: 'learn' }) : this.nav('topic', { topicKey: r.topicKey });
+          if (r.kind === 'quiz') return r.label === 'Type Rating' ? this.nav('typeRating') : this.startQuiz(false, r.label);
+          return this.nav('checklist', { group: r.group, phaseIdx: r.idx, phasesOrigin: 'flight' });
+        };
+        const toItem = (r) => ({ label: r.label, cat: r.cat, iconPath: iconFor(r.kind), onOpen: () => { this.setState({ searchOpen: false }); go(r); } });
+        let searchGroups;
+        if (!sq) {
+          const idx = this.searchIndex(), pick = (l) => idx.find((r) => r.label === l);
+          const items = ['Departure Briefing', 'Emergency Descent', 'Engine Fire', 'Max operating altitude', 'Quick Check'].map(pick).filter(Boolean).map(toItem);
+          searchGroups = items.length ? [{ heading: 'Suggestions', items }] : [];
+        } else {
+          const matches = this.searchIndex().filter((r) => r.label.toLowerCase().includes(sq) || r.cat.toLowerCase().includes(sq));
+          const buckets = [
+            { heading: 'Checklists', kinds: ['checklist', 'item'] },
+            { heading: 'Limitations', kinds: ['lim'] },
+            { heading: 'Knowledge', kinds: ['topic'] },
+            { heading: 'Practice', kinds: ['quiz'] },
+          ];
+          searchGroups = buckets
+            .map((b) => ({ heading: b.heading, items: matches.filter((r) => b.kinds.includes(r.kind)).slice(0, 8).map(toItem) }))
+            .filter((g) => g.items.length);
+        }
+        return { searchGroups, searchNoResults: !!sq && searchGroups.length === 0 };
+      })(),
+      openNormals: () => this.nav('phases', { group: 'normals', phasesOrigin: 'flight' }),
+      openAbnormal: () => this.nav('phases', { group: 'abnormal', phasesOrigin: 'flight' }),
+      openEmergency: () => this.nav('phases', { group: 'emergency', phasesOrigin: 'flight' }),
+      openLims: (e) => { e && e.preventDefault && e.preventDefault(); this.nav('lims', { limsOrigin: 'flight' }); },
+      isSops: s.screen === 'sops',
+      isLsops: s.screen === 'lsops',
+      isAnySops: s.screen === 'sops' || s.screen === 'lsops',
+      openSops: () => this.nav('sops'),
+      sopsBack: () => this.nav(s.screen === 'lsops' ? 'learn' : 'flight'),
+      sopGroups: Component.SOPS.map((g) => ({ title: g.title, items: g.items.map(([label, ref], i) => ({ label, ref, rowBorder: border(i, g.items.length) })) })),
+      startFlight: () => this.nav('fm', { group: 'normals', phaseIdx: 0, phasesOrigin: 'flight' }),
+      phasesBack: () => this.nav(s.phasesOrigin === 'learn' ? 'learn' : 'flight'),
+      phasesAnyDone: phasesArr.some((p) => phaseStat(p).res > 0),
+      phasesResetBg: phasesArr.some((p) => phaseStat(p).res > 0) ? '#fff' : '#EEF0F3',
+      phasesResetBorder: phasesArr.some((p) => phaseStat(p).res > 0) ? '#DDE2E8' : '#E2E5EA',
+      phasesResetCursor: phasesArr.some((p) => phaseStat(p).res > 0) ? 'pointer' : 'default',
+      phasesResetPE: phasesArr.some((p) => phaseStat(p).res > 0) ? 'auto' : 'none',
+      phasesResetAll: () => {
+        const checks = Object.assign({}, s.checks), skips = Object.assign({}, s.skips || {});
+        phasesArr.forEach((p) => { for (let i = 0; i < p.items.length; i++) { const k = s.group + ':' + p.id + ':' + i; delete checks[k]; delete skips[k]; } });
+        this.setState({ checks, skips });
+      },
+      groupTitle: s.group === 'normals' ? 'Normals' : s.group === 'abnormal' ? 'Abnormal' : s.group === 'memory' ? 'Memory Items' : 'Emergency',
+      groupSubtitle: 'A320 ' + (s.group === 'normals' ? 'normal' : s.group === 'abnormal' ? 'abnormal' : s.group === 'memory' ? 'memory item' : 'emergency') + ' procedures · tap to run',
+      phases,
+      clTitle: ph.label, clItems,
+      clStudy: s.studyCl, clStudyOff: !s.studyCl,
+      clStudyBg: '#fff', clStudyBorder: '#DDE2E8', clStudyIcon: '#5A6672',
+      clToggleStudy: () => this.setState({ studyCl: !s.studyCl, revealCl: 0 }),
+      clRevealNext: () => this.setState({ revealCl: Math.min(s.revealCl + 1, ph.items.length * 2) }),
+      clRevealBtn: () => { if (s.revealCl >= ph.items.length * 2) { lastPhaseCl ? this.nav(s.phasesOrigin === 'learn' ? 'learn' : 'flight') : this.setState({ phaseIdx: s.phaseIdx + 1, revealCl: 0 }); } else this.setState({ revealCl: s.revealCl + 1 }); },
+      clRevealLabel: s.revealCl >= ph.items.length * 2 ? (lastPhaseCl ? (s.phasesOrigin === 'learn' ? 'Finish \u2014 back to Learn' : 'Finish \u2014 back to Flight') : 'Next: ' + phasesArr[s.phaseIdx + 1].label) : 'Reveal next',
+      clRevealProg: s.revealCl + '/' + (ph.items.length * 2),
+      clRevealBg: s.revealCl >= ph.items.length * 2 ? '#17A673' : '#1466D6',
+      clRevealCursor: 'pointer',
+      clSub: ph.sub || '', clHasSub: !!ph.sub,
+      clNoneDone: clDoneCount === 0, clAnyDone: clDoneCount > 0,
+      clMarkAll: () => { const checks = Object.assign({}, s.checks), skips = Object.assign({}, s.skips || {}); for (let i = 0; i < ph.items.length; i++) { checks[this.ckey(i)] = true; delete skips[this.ckey(i)]; } this.setState({ checks, skips, scrollBottom: true }); },
+      chipPhases, clComplete, clNotComplete: !clComplete,
+      clCheckedN: clDoneCount, clSkippedN: clSkipCount,
+      clResolvedN: clDoneCount + clSkipCount, clTotalN: ph.items.length,
+      clCheckCur: () => { if (curIdx >= 0) this.checkAt(curIdx); },
+      clSkipCur: () => { if (curIdx >= 0) this.skipItem(curIdx); },
+      clNextChkLabel: lastPhaseCl ? (s.phasesOrigin === 'learn' ? 'Finish \u2014 back to Learn' : 'Finish \u2014 back to Flight') : 'Next: ' + phasesArr[s.phaseIdx + 1].label,
+      clGoNextChk: () => { lastPhaseCl ? this.nav(s.phasesOrigin === 'learn' ? 'learn' : 'flight') : this.setState({ phaseIdx: s.phaseIdx + 1 }); },
+      clPct: Math.round(clDoneCount / ph.items.length * 100) + '%',
+      clReset: () => { const checks = Object.assign({}, s.checks), skips = Object.assign({}, s.skips || {}); for (let i = 0; i < ph.items.length; i++) { delete checks[this.ckey(i)]; delete skips[this.ckey(i)]; } this.setState({ checks, skips }); },
+      clProg: (s.phaseIdx + 1) + '/' + phasesArr.length,
+      backToPhases: () => this.nav(s.group === 'memory' ? 'memPhases' : 'phases'),
+      clBack: () => { s.phaseIdx > 0 ? this.setState({ phaseIdx: s.phaseIdx - 1 }) : this.nav('phases'); },
+      clNext: () => { lastPhase ? this.nav('phases') : this.setState({ phaseIdx: s.phaseIdx + 1 }); },
+      clNextLabel: lastPhase ? 'Done' : 'Next',
+      toFM: () => this.nav('fm'), toList: () => this.nav('checklist'),
+      fmHasDone: fmDone.length > 0, fmDone,
+      fmHasCurrent: !!fmCur, fmCurLabel: fmCur ? fmCur[0] : '', fmCurResp: fmCur ? fmCur[1] : '',
+      fmHasLimit: !!fmLimit, fmLimitTitle: fmLimit ? fmLimit.t : '', fmLimitBody: fmLimit ? fmLimit.b : '',
+      fmAllDone: !fmCur, fmUpcoming,
+      fmProg: this.checkedCount() + '/' + ph.items.length,
+      fmCheck: () => this.fmCheckNext(), fmUncheck: () => this.fmUncheckLast(),
+      fmNextChecklist: () => { lastPhase ? this.nav(s.phasesOrigin === 'learn' ? 'learn' : 'flight') : this.setState({ phaseIdx: s.phaseIdx + 1 }); },
+      fmNextLabel: lastPhase ? 'Finish flight' : 'Next checklist',
+      hangar, leadFilters, leadRows, knowledge, tests,
+      qActive: !quiz.done, qDone: quiz.done, qTitle: quiz.title || 'Quick Check',
+      qCat: qq.cat, qText: qq.q, qProg: (quiz.qIdx + 1) + ' of ' + qList.length,
+      qIsCloze: !!qq.cloze, qClozeLabel: qq.cloze || '', qOpts,
+      qIsOrder: isOrder, qIsChoice: !isOrder, qOrderSlots, qPool,
+      qFeedback: isProf ? (quiz.picked === null ? '' : 'Answer recorded.') : quiz.picked === null ? '' : quiz.picked === qq.correct ? 'Correct.' : 'Not quite — ' + qq.opts[qq.correct],
+      qShowNext: quiz.picked !== null,
+      qNext: () => this.quizNext(),
+      qScore: quiz.score + '/' + qList.length,
+      qRestart: () => this.startQuiz(quiz.fromLims),
+      backLearn: () => this.nav('learn'),
+      lims, limProg: limReadCount + '/739',
+      limsLearn, limProgLearn: limReadLearnCount + '/739',
+      limStudy: s.studyLim, limStudyOff: !s.studyLim,
+      limStudyBg: '#fff', limStudyBorder: '#DDE2E8', limStudyIcon: '#5A6672',
+      limToggleStudy: () => this.setState({ studyLim: !s.studyLim, revealLim: 0 }),
+      limRevealNext: () => this.setState({ revealLim: Math.min(s.revealLim + 1, Component.LIMS.length * 2) }),
+      limRevealLabel: s.revealLim >= Component.LIMS.length * 2 ? 'All revealed' : 'Reveal next',
+      limRevealProg: s.revealLim + '/' + (Component.LIMS.length * 2),
+      limRevealBg: s.revealLim >= Component.LIMS.length * 2 ? '#AEB6C0' : '#1466D6',
+      limRevealCursor: s.revealLim >= Component.LIMS.length * 2 ? 'default' : 'pointer',
+      limPctLearn: Math.max(2, Math.round(limReadLearnCount / Component.LIMS.length * 100)) + '%',
+      limPct: Math.max(2, Math.round(limReadCount / Component.LIMS.length * 100)) + '%',
+      backLims: () => this.nav(((s.quiz && s.quiz.fromLims) || s.limsOrigin === 'learn') ? 'learn' : 'flight'),
+      startTraining: () => this.startQuiz(true),
+    };
+  }
+}
+</script>
+</body>
+</html>
